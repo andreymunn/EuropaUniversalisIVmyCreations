@@ -1,0 +1,115 @@
+#Country Name: Please see filename.
+
+graphical_culture = easterngfx
+
+color = { 145 212  28 }
+
+preferred_religion = orthodox
+
+historical_idea_groups = {
+	
+	defensive_ideas
+	spy_ideas
+	trade_ideas
+	offensive_ideas
+	economic_ideas
+	offensive_ideas
+	administrative_ideas
+        quality_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	prussian_frederickian
+	prussian_uhlan
+	prussian_drill
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Giovanni #0" = 80
+	"André #0" = 60
+	"Andrei #0" = 40
+	"Adrian #0" = 40
+	"Grigoros #0" = 40
+	"Titus #0" = 20
+	"Vasilis #0" = 20
+	"Andrey #0" = 20
+	"Petros #0" = 20
+	"Enrique #0" = 20
+	"Giuseppe #0" = 20
+	"Andreas #0" = 10
+	"Alexandra #0" = -10
+	"Niko #0" = 10
+	"Saladin #0" = 0
+	"Alexeios #0" = 0
+	"Ambrosios #0" = 0
+	"Bartholomaios #0" = 0
+	"Basileios #0" = 0
+	"Chrysanthos #0" = 0
+	"David #0" = 0
+	"Demetrios #0" = 0
+	"Diogenes #0" = 0
+	"Dionysos #0" = 0
+	"Eirenaios #0" = 0
+	"Elpidios #0" = 0
+	"Gregorios #0" = 0
+	"Hektor #0" = 0
+	"Herakles #0" = 0
+	"Iason #0" = 0
+	"Ioannes #0" = 0
+	"Kastor #0" = 0
+	"Manuel #0" = 0
+	"Matthaios #0" = 0
+	"Nestor #0" = 0
+	"Nikomedes #0" = 0
+	"Orestes #0" = 0
+	"Palaemon #0" = 0
+	"Pelagios #0" = 0
+	"Petros #0" = 0
+	"Philemon #0" = 0
+	"Philippos #0" = 0
+	"Prokopios #0" = 0
+	"Skantarios #0" = 0
+	"Stefanos #0" = 0
+	"Theodoros #0" = 0
+}
+
+ship_names = {
+	Dermoaros
+	Frangokastelo
+	Glalos Moldova
+	Koudouras
+	Lentas Bizance
+	Matala NewRome
+	Paleochora Papadogiannis Plakias
+	Sougia Walahia
+}
+
+army_names = {
+	"Army of $PROVINCE$" 
+}
+
+leader_names = {
+	Argyrus Artavasdus
+	Basileus Walahus Moldavus 
+	Diogenes Ducas Turkus
+	Monomachus Morosini
+	Romanus Rurikovich Ardelean Franko
+	Stauracius Stratioticus Moldovan
+	Vataces "de Medici" Muntean
+	Zimisces Salamis Samos Simitzopoulos
+	Themistoklis
+}
+fleet_names = {
+	 "Escadra de $PROVINCE$" 
+}

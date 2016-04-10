@@ -1,0 +1,27 @@
+government = despotic_monarchy
+primary_culture = armenian
+religion = orthodox
+technology_group = western
+
+culture_group_union = caucasian
+
+add_accepted_culture = armenian
+add_accepted_culture = dagestani
+add_accepted_culture = azerbaijani
+add_accepted_culture = astrakhani
+add_accepted_culture = turkish
+add_accepted_culture = georgian
+
+historical_friend = PER
+historical_friend = GER
+historical_friend = PRU
+historical_friend = ENG
+historical_friend = FRA
+historical_friend = NED
+historical_friend = SWE
+historical_friend = RMN
+historical_friend = MOL
+historical_friend = WAL
+historical_friend = GRE
+
+

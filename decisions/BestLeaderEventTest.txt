@@ -1,0 +1,116 @@
+country_decisions = {
+
+Best_leader_test = {
+
+   potential = {
+       
+	   tag = ROOT
+          normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+         }
+		 
+		 
+   allow = {
+   
+                ADM = 6
+		DIP = 6
+		MIL = 6
+        
+		adm_power = 1550
+		
+   }
+
+  effect = {
+  
+   add_presige = 55
+          add_country_modifier = {
+				name = "the_statue_in_restraint_of_appeals"
+				duration = -1
+			}
+			if = {
+				limit = { has_dlc = "The Cossacks" }
+				custom_tooltip = will_increase_clergy_loyalty_by_5
+			}
+	
+			
+	        add_stability = +1
+	        add_inflation = -5
+            
+			add_piety = 0.5
+			add_karma = 25
+			add_patriarch_authority = 0.25
+			add_fervor = 25
+			add_church_power = 100
+			add_diplomats = 1
+			clr_country_flag = church_estate_in_power		
+			
+	capital_scope = {
+				add_base_tax = 3
+				add_base_production = 2
+				add_base_manpower = 2
+			     }		
+  }
+	factor = 1
+		}
+
+Best_leader22_test = {
+
+   potential = {
+       
+	   tag = ROOT
+          normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+         }
+		 
+		 
+   allow = {
+   
+        ADM = 6
+		DIP = 6
+		MIL = 6
+        
+		prestige = 100
+		
+		adm_power = 999
+		dip_power = 999
+		mil_power = 999
+		
+   }
+
+  effect = {
+  
+   add_presige = 55
+          add_country_modifier = {
+				name = "the_statue_in_restraint_of_appeals"
+				duration = -1
+			}
+			if = {
+				limit = { has_dlc = "The Cossacks" }
+				custom_tooltip = will_increase_clergy_loyalty_by_5
+			}
+	
+			
+	       
+	        add_inflation = -5
+            
+				163 = {
+				 add_core = CR2
+				}
+			
+	capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			     }		
+  }
+	factor = 1
+		}		
+		
+   
+}

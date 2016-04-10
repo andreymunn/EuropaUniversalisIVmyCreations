@@ -1,0 +1,901 @@
+# Division of Rome
+country_event = {
+	id = and.112
+	
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		
+		ai_chance = { 
+			factor = 20
+		}
+		change_tag = LUX
+		
+		change_technology_group = western
+                
+                change_graphical_culture = westerngfx
+                 
+		every_owned_province = {
+			
+			
+			add_core = LUX
+			owns = 368
+			add_core = 368
+		}
+				
+		
+		LUX = { change_religion = catholic }
+
+	}
+	
+  option = {
+		
+		ai_chance = { 
+			factor = 20
+		}
+		change_tag = POL
+		change_primary_culture = polish
+                change_technology_group = western
+		swap_free_idea_group = yes
+		every_owned_province = {
+			
+		poland_region = {
+                         limit = {
+				NOT = { owned_by = ROOT }
+				  }
+				add_permanent_claim = POL
+			          }
+                         	
+		silesia_area = {
+                         limit = {
+				NOT = { owned_by = ROOT }
+				  }
+				add_permanent_claim = POL
+			          }
+                         }	
+                  baltic_region  = {
+                         limit = {
+				NOT = { owned_by = ROOT }
+				  }
+				add_permanent_claim = POL
+			          }
+                         	
+	       
+			
+		
+		POL = { change_religion = orthodox }
+
+	}
+	
+	option = {
+		
+		ai_chance = { 
+			factor = 20
+		}
+		change_tag = BUR
+                change_primary_culture = burgundian
+                
+		change_technology_group = western
+                swap_free_idea_group = yes
+		every_owned_province = {
+			
+			
+			add_core = BUR
+			owns = 321
+			add_core = 321
+		}
+				
+		
+		BUR = { change_religion = ROOT }
+
+	}
+  
+
+	option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = AN1
+		
+                change_technology_group = western
+		swap_free_idea_group = yes
+		
+		every_owned_province = {
+			limit = {
+				
+			}
+			add_core = AN1
+			owns = 321
+			add_core = 321
+		}
+						
+
+		AN1 = { change_religion = ROOT }
+	
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = AN3
+		
+                change_technology_group = western
+		swap_free_idea_group = yes
+		
+		every_owned_province = {
+			limit = {
+				
+			}
+			add_core = AN3
+			owns = 321
+			add_core = 321
+		}
+						
+
+		AN3 = { change_religion = ROOT }
+	
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = PRG
+		
+                change_technology_group = western
+		
+		
+		every_owned_province = {
+			limit = {
+				
+			}
+			add_core = PRG
+			owns = 321
+			add_core = 321
+		}
+						
+
+		PRG = { change_religion = ROOT }
+	
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = CAN
+		
+                change_technology_group = western
+		
+		
+		every_owned_province = {
+			limit = {
+				
+			}
+			add_core = CAN
+			owns = 321
+			add_core = 321
+		}
+						
+
+		CAN = { change_religion = ROOT }
+	
+	}
+
+option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = AN2
+		
+                change_technology_group = western
+		swap_free_idea_group = yes
+		
+		every_owned_province = {
+			limit = {
+				
+			}
+			add_core = AN2
+			owns = 321
+			add_core = 321
+		}
+						
+
+		AN2 = { change_religion = ROOT }
+	
+	}
+
+option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = TEU
+		change_primary_culture = armenian
+                change_technology_group = western
+		
+		
+		every_owned_province = {
+			limit = {
+				
+			}
+			add_core = TEU
+			owns = 321
+			add_core = 321
+		}
+						
+
+		TEU = { change_religion = ROOT }
+	
+	}
+
+  option = {
+		
+		ai_chance = { 
+			factor = 20
+		}
+		change_tag = NOV
+		change_primary_culture = russian
+                change_technology_group = western
+		swap_free_idea_group = yes
+		every_owned_province = {
+			
+			
+			add_core = NOV
+			owns = 368
+			add_core = 368
+		}
+		add_core = 321		
+		
+		NOV = { change_religion = orthodox }
+
+	}
+	
+	
+
+  option = {
+		
+		ai_chance = { 
+			factor = 20
+		}
+		change_tag = KAZ
+		change_primary_culture = russian
+                change_technology_group = western
+		#change_government = united_republic
+		
+		every_owned_province = {
+			
+			
+				crimea_region = {
+                         limit = {
+				NOT = { owned_by = ROOT }
+				  }
+				add_permanent_claim = KAZ
+			          }
+					  
+				saratov_area = {
+                         limit = {
+				NOT = { owned_by = ROOT }
+				  }
+				add_permanent_claim = KAZ
+			          }
+			russia_region = {
+                         limit = {
+				NOT = { owned_by = ROOT }
+				  }
+				add_permanent_claim = KAZ
+			          }
+			bashkiria_area = {
+                         limit = {
+				NOT = { owned_by = ROOT }
+				  }
+				add_permanent_claim = KAZ
+			          }
+			ruthenia_region = {
+                         limit = {
+				NOT = { owned_by = ROOT }
+				  }
+				add_permanent_claim = KAZ
+			          }
+			
+			
+		}
+		
+		KAZ = { change_religion = orthodox }
+
+	}
+
+  option = {
+		
+		ai_chance = { 
+			factor = 20
+		}
+		change_tag = MOL
+		change_primary_culture = romanian
+               change_technology_group = western
+		
+		
+		every_owned_province = {
+			
+					
+			ruthenia_region = {
+                         limit = {
+				NOT = { owned_by = ROOT }
+				  }
+				add_permanent_claim = MOL
+			          }
+			
+			carpathia_region = {
+                         limit = {
+				NOT = { owned_by = ROOT }
+				  }
+				add_permanent_claim = MOL
+			          }
+			
+		}
+		
+		MOL = { change_religion = orthodox }
+
+	}
+
+  option = {
+		
+		ai_chance = { 
+			factor = 20
+		}
+		change_tag = WAL
+		change_primary_culture = romanian
+                change_technology_group = western
+		
+		
+		every_owned_province = {
+			
+			
+			carpathia_region = {
+                         limit = {
+				NOT = { owned_by = ROOT }
+				  }
+				add_permanent_claim = WAL
+			          }
+			
+		}
+		
+		WAL = { change_religion = orthodox }
+
+	}
+
+option = {
+		
+		ai_chance = { 
+			factor = 20
+		}
+		change_tag = MOS
+		change_primary_culture = russian
+                change_technology_group = western
+		swap_free_idea_group = yes
+		every_owned_province = {
+			
+			
+			add_core = MOS
+			owns = 368
+			add_core = 368
+		}
+		add_core = 321		
+		
+		MOS = { change_religion = orthodox }
+
+	}
+
+	option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +1
+		add_adm_power = +350
+		add_dip_power = +350
+		add_mil_power = +350
+                change_technology_group = western
+		
+	}
+	
+	
+	
+	option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +1
+		add_adm_power = +150
+		add_dip_power = +150
+		add_mil_power = +150
+                change_technology_group = western
+		change_primary_culture = armenian
+	}
+
+	option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +1
+		add_adm_power = +150
+		add_dip_power = +150
+		add_mil_power = +150
+                change_technology_group = western
+		change_primary_culture = dagestani
+	}
+
+      option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +1
+		add_adm_power = +150
+		add_dip_power = +150
+		add_mil_power = +150
+                change_technology_group = western
+		change_primary_culture = azerbaijani
+	}
+
+	option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +1
+		add_adm_power = +150
+		add_dip_power = +150
+		add_mil_power = +150
+                change_technology_group = western
+		change_primary_culture = romanian
+		
+	}
+	
+	option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +1
+		add_adm_power = +150
+		add_dip_power = +150
+		add_mil_power = +150
+                change_technology_group = western
+		change_primary_culture = greek
+		
+	}
+     
+    option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +1
+		add_adm_power = +150
+		add_dip_power = +150
+		add_mil_power = +150
+                change_technology_group = western
+		change_primary_culture = goths
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +1
+		add_adm_power = +150
+		add_dip_power = +150
+		add_mil_power = +150
+                change_technology_group = western
+		change_primary_culture = polish
+		
+	}
+
+ option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +1
+		add_adm_power = +150
+		add_dip_power = +150
+		add_mil_power = +150
+                change_technology_group = western
+		change_primary_culture = turkish
+		
+	}
+ option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +1
+		add_adm_power = +150
+		add_dip_power = +150
+		add_mil_power = +150
+                change_technology_group = western
+		change_primary_culture = turkmeni
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +1
+		add_adm_power = +150
+		add_dip_power = +150
+		add_mil_power = +150
+        change_technology_group = western
+		change_primary_culture = al_misr_arabic
+		
+	}
+
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +1
+		add_adm_power = +150
+		add_dip_power = +150
+		add_mil_power = +150
+                change_technology_group = western
+		change_primary_culture = tunisian
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +1
+		add_adm_power = +150
+		add_dip_power = +150
+		add_mil_power = +150
+                change_technology_group = western
+		change_primary_culture = tecos
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +1
+		add_adm_power = +150
+		add_dip_power = +150
+		add_mil_power = +150
+                change_technology_group = western
+                change_religion = orthodox
+		change_primary_culture = filipino
+		
+	}
+
+ option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +1
+		add_adm_power = +150
+		add_dip_power = +150
+		add_mil_power = +150
+                change_technology_group = western
+                change_religion = orthodox
+		change_primary_culture = byelorussian
+		
+	}
+
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +1
+		add_adm_power = +150
+		add_dip_power = +150
+		add_mil_power = +150
+                change_technology_group = western
+                change_primary_culture = astrakhani
+		
+	}
+
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +1
+		add_adm_power = +150
+		add_dip_power = +150
+		add_mil_power = +150
+                change_technology_group = western
+                change_primary_culture = samoyed
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +1
+		add_adm_power = +150
+		add_dip_power = +150
+		add_mil_power = +150
+                change_technology_group = western
+                change_primary_culture = welsh
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +1
+		add_adm_power = +150
+		add_dip_power = +150
+		add_mil_power = +150
+                change_technology_group = western
+                change_primary_culture = cantonese
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +1
+		add_adm_power = +150
+		add_dip_power = +150
+		add_mil_power = +150
+                change_technology_group = western
+                change_primary_culture = bantu
+		
+	}
+
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +1
+		add_adm_power = +150
+		add_dip_power = +150
+		add_mil_power = +150
+                change_technology_group = western
+                change_primary_culture = andalucian
+		
+	}
+
+
+
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +1
+		add_adm_power = +150
+		add_dip_power = +150
+		add_mil_power = +150
+                change_technology_group = western
+                change_primary_culture = polynesian
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = yakut
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = patagonian
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = aboriginal
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = burgundian
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = hessian
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = prussian
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = schlesian
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = franconian
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = danish
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = galician
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = basque
+		
+	}
+
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = scottish
+		
+	}
+
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = aquitaine
+		
+	}
+
+
+
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = marathi
+		
+	}
+}
+
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = marathi
+		
+	}
+}
+
+
+
+
+

@@ -1,0 +1,7 @@
+government = administrative_monarchy
+primary_culture = romanian
+religion = orthodox
+technology_group = western 
+capital = 2998	# Bucuresti
+
+1611.1.1 = { technology_group = western }

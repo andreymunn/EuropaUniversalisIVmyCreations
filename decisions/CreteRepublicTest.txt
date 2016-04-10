@@ -1,0 +1,78 @@
+country_decisions = {
+           #1898-1908 autonomus Cretan State vassal of Turkey/Otomans
+	kingdom_of_Crete_vassal_of_Turkey = {
+		major = yes
+		potential = {
+			NOT = { exists = CR2 }
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+                        
+			OR = {
+                             religion = catholic
+                             religion = othodox
+                             religion = protestant
+                             religion = reformed
+                             religion = sunni
+                             }
+			NOT = { government = republic }
+			
+				owns = 163
+				
+			
+			
+		}
+		allow = {
+			#tag = TUR
+			is_at_war = no
+			owns_core_province = 163
+                        AND = {
+                         OR = {
+                               MIL = 0
+                               MIL = 1
+                               MIL = 2
+                               MIL = 3
+                             }
+                         OR = {
+                                 ADM = 0 
+                                 ADM = 1
+                                 ADM = 2
+                                }
+			      }
+		}
+		effect = {
+			add_prestige = 25
+			if = {
+				
+				CR2 = {
+					add_core = 163
+					add_core = 321
+					add_core = 320
+				}
+				release = CR2
+				CR2 = { change_primary_culture = greek }
+			}
+			if = {
+				
+				change_tag = CR2
+				if = {
+					limit = { has_custom_ideas = no }
+					country_event = { id = ideagroups.1 } #Swap Ideas
+				}
+			}
+			
+			CR2 = {
+				set_capital = 163
+				change_religion = orthodox
+				change_government = administrative_monarchy
+				
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}

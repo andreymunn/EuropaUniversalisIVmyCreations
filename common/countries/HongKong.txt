@@ -1,0 +1,218 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 255  220  104 }
+ 
+revolutionary_colors = { 5  0  1 }
+
+historical_idea_groups = {
+	trade_ideas
+	economic_ideas
+	defensive_ideas
+	administrative_ideas
+	maritime_ideas
+	quantity_ideas
+	naval_ideas
+	offensive_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	chevauchee
+	western_longbow
+	gaelic_mercenary
+	gaelic_free_shooter
+	french_caracolle
+	irish_charge
+	anglofrench_line
+	french_dragoon
+	british_redcoat
+	british_hussar
+	british_square
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+		"Alexander #0" = 10
+		"Alexei #0" = 10
+		"Garry #0" = 10
+		"Scott #0" = 10
+		"Patrik #0" = 10
+		"André #0" = 10
+		"Andrey #0" = 10
+		"Andrei Mihai #0" = 10
+		"Zhanyan #0" = 10
+		"Jianrui #0" = 10
+		"Jianlin #0" = 10
+		"Jianti #0" = 10
+		"Jianchun #0" = 10
+		"Jianze #0" = 10
+		"Jianjun #0" = 10
+		"Jianzhi #0" = 10
+		"Jianpei #0" = 10
+		"Jianji #0" = 10
+		"Youji #0" = 10
+		"Youtang #0" = 10
+		"Youwan #0" = 10
+		"Youlun #0" = 10
+		"Youbing #0" = 10
+		"Youyun #0" = 10
+		"Youheng #0" = 10
+		"Osman #0" = 10
+		"Ahmed #0" = 10
+		"Suleiman #0" = 10
+		"Houxi #0" = 10
+		"Houcong #0" = 10
+		"Sergio #0" = 10
+		"Napoleon #0" = 10
+		"Zaihou #0" = 10
+		"Yiling #0" = 10
+		"Yijun #0" = 10
+		"Yiliu #0" = 10
+		"Changluo #0" = 10
+		"Changxu #0" = 10
+		"Changxun #0" = 10
+		"Changzhi #0" = 10
+		"Changhao #0" = 10
+		"Changrun #0" = 10
+		"Changyin #0" = 10
+		"Changbo #0" = 10
+		"Youxiao #0" = 10
+		"Youxue #0" = 10
+		"Youmo #0" = 10
+		"Youjian #0" = 10
+		"Youyi #0" = 10
+		
+		"Su #0" = 10
+		"Zhen #0" = 10
+		"Bo #0" = 10
+		"Zi #0" = 10
+		"Chun #0" = 10
+		"Bo #0" = 10
+		"Gui #0" = 10
+		"Xuntan #0" = 10
+		"Xunquan #0" = 10
+		"Ying #0" = 10
+		"Zhanyan #0" = 10
+		"Zhi #0" = 10
+		"Quan #0" = 10
+		"Chenhao #0" = 10
+		"Bian #0" = 10
+		"Hui #0" = 10
+		"Song #0" = 10
+		"Mo #0" = 10
+		"Yin #0" = 10
+		"Jing #0" = 10
+		"Dong #0" = 10
+		"Fu #0" = 0
+		"Xingui #0" = 0
+		"Zonglian #0" = 0
+		"Ji #0" = 0
+		"Xiang #0" = 0
+		"Yu #0" = 0
+		"Quan #0" = 0
+		"Zhong #0" = 0
+		"Ji #0" = 0
+		"Xizheng #0" = 0
+		"Jian #0" = 0
+		"Shao'en #0" = 0
+		"Jiusi #0" = 0
+		"Song #0" = 0
+		"Chun #0" = 0
+		
+		"Li #0" = 0
+		"Xiao #0" = 0
+		"Xian #0" = 0
+		"Tang #0" = 0
+		"Boyuan #0" = 0
+		"Chunyao #0" = 0
+		"Xianzhang #0" = 0
+		"Liang #0" = 0
+		"Ruoshui #0" = 0
+		"Shouyi #0" = 0
+		"De #0" = 0
+		"Ti #0" = 0
+		"Hongxian #0" = 0
+		"Shihuai #0" = 0
+		"Shixi #0" = 0
+		"Yizan #0" = 0
+		"Huali #0" = 0
+		"Zhide #0" = 0
+		"Yuanxi #0" = 0
+		"Xixue #0" = 0
+		"Weizhen #0" = 0
+		"Han #0" = 0
+		"Boheng #0" = 0
+		"Mian #0" = 0
+		"Zongyi #0" = 0
+		"Kai #0" = 0
+		"Meng #0" = 0
+		"Hong #0" = 0
+		"Du #0" = 0
+		"Danian #0" = 0
+		"Tai #0" = 0
+		"Minzheng #0" = 0
+		"Mengyang #0" = 0
+		"Jingming #0" = 0
+		"Zhenqing #0" = 0
+		"Gong #0" = 0
+		"Shanfu #0" = 0
+		"Shen #0" = 0
+		"Zhengming #0" = 0
+		"Zuo #0" = 0
+		
+		"Wenshi #0" = 0
+		"Liangxiang #0" = 0
+		"Wannian #0" = 0
+		"Zongyan #0" = 0
+		"Tingkui #0" = 0
+		"Bangzuo #0" = 0
+		"Ruxiu #0" = 0
+		"Guochang #0" = 0
+		"Huanchun #0" = 0
+		"Xianming #0" = 0
+		"Shengdou #0" = 0
+		"Zhaochen #0" = 0
+		"Shimei #0" = 0
+		"Guoxi #0" = 0
+		"Shangzhen #0" = 0
+		"Daoxing #0" = 0
+		"Tingbiao #0" = 0
+		"Yunrang #0" = 0
+                "Henry #3" = 100
+	"Edward #3" = 60
+	"Charles #0" = 40
+	"James #0" = 40
+	"William #2" = 20
+	"Richard #2" = 20
+        "Henry #3" = 100
+	"Andrei #3" = 60
+	"Mihai #0" = 40
+	"Vasile #0" = 40
+	"Arthur #2" = 20
+	"Ragnar #2" = 20
+		
+}
+
+leader_names = {
+	Zhu Wu Geng Shang Zheng Zhao Li Shi Liu Guo Yang Wang Qian 
+	Chen Sun Sima Cao Xiao Qi Zu Zhou Huang Bai Qiu Tang Lu	Xu Chang 
+	Feng Deng Hua Gu Fei Fu Hu Mei Xiong York Muntean Basarab
+        Rurikovich Davies "da Fonseca" "de Albuquerque"
+        "von Rottenburg" "von Hohenzollern" Schitt Vasilescu Popa Galitsky 
+        Moskovich Serbsky Rumyski Fritz Fleming Nelson Tudor Stuartt
+        
+	
+}
+
+army_names = {
+	"Army de $PROVINCE$" "National Army"
+}
+
+fleet_names = {
+	 "Flote of $PROVINCE$" 
+}

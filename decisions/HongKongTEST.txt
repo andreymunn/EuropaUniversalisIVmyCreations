@@ -1,0 +1,78 @@
+country_decisions = {
+
+	kingdom_of_Hong_Kong = {
+		major = yes
+		potential = {
+			NOT = { exists = HOK }
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+                             religion = catholic
+                             religion = othodox
+                             religion = protestant
+                             religion = reformed
+                             religion = sunni
+                             }
+			NOT = { government = republic }
+			
+				owns = 667
+				
+			
+			
+		}
+		allow = {
+			
+			is_at_war = no
+			owns_core_province = 667
+			owns_core_province = 666
+                         OR = {
+                               MIL = 0
+                               MIL = 1
+                               MIL = 2
+                               MIL = 3
+                             }
+                         OR = {
+                                 ADM = 0 
+                                 ADM = 1
+                                 ADM = 2
+                                }
+
+			
+		}
+		effect = {
+			add_prestige = 25
+			if = {
+				
+				HOK = {
+					add_core = 667
+					add_core = 666
+					add_core = 665
+				}
+				release = HOK
+				HOK = { change_primary_culture = cantonese }
+			}
+			if = {
+				
+				change_tag = HOK
+				if = {
+					limit = { has_custom_ideas = no }
+					country_event = { id = ideagroups.1 } #Swap Ideas
+				}
+			}
+			
+			HOK = {
+				set_capital = 667
+				change_religion = protestant
+				change_government = administrative_republic
+				
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}

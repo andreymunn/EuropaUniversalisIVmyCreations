@@ -1,0 +1,22 @@
+government = administrative_republic
+technology_group = western
+primary_culture = cantonese
+religion = protestant
+
+capital = 667	#Stockholm
+
+historical_friend = PRU
+historical_friend = VEN
+historical_friend = JAP
+historical_friend = FRA
+historical_friend = GBR
+historical_friend = TUR
+historical_friend = RMN
+historical_friend = POR
+historical_friend = USA
+historical_friend = SPA
+historical_friend = BRZ
+historical_friend = NED
+historical_friend = RUS
+historical_friend = ITA
+historical_friend = CAN

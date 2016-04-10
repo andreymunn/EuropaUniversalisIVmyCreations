@@ -1,0 +1,251 @@
+country_decisions = {
+         
+  restore_kingdom_of_Yaroslav = {
+		major = yes
+		potential = {
+			NOT = { exists = YAR }
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+                        
+		
+			NOT = { government = republic }
+			
+				owns = 464
+				
+			
+			
+		}
+		allow = {
+			
+			is_at_war = no
+			owns_core_province = 464
+              OR = {
+				primary_culture = russian
+				primary_culture = ruthenian
+				primary_culture = byelorussian
+				primary_culture = romanian
+				tag = RUS
+			}           
+                       
+			
+		}
+		effect = {
+			add_prestige = 25
+			if = {
+				
+				YAR = {
+					add_core = 464
+					add_core = 465
+					add_core = 466
+				}
+				release = YAR
+				YAR = { change_primary_culture = ROOT }
+			}
+			if = {
+				
+				change_tag = YAR
+				if = {
+					limit = { has_custom_ideas = no }
+					country_event = { id = ideagroups.1 } #Swap Ideas
+				}
+			}
+			
+			YAR = {
+				set_capital = 464
+				change_religion = orthodox
+				change_government = administrative_monarchy
+				
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+Cede_landss_Yaroslav1 = {
+		major = yes
+		potential = {
+		  #NOT = { exists = YAR }
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+                        
+			OR = {
+                             religion = othodox
+                             religion = protestant
+                             religion = reformed
+                             
+                             }
+           	
+			
+			
+			
+		}
+		allow = {
+			
+			is_at_war = no
+			OR = {
+				primary_culture = russian
+				primary_culture = ruthenian
+				primary_culture = byelorussian
+				primary_culture = romanian
+				
+			}
+                        
+            
+			owns_core_province = 295
+			
+			
+		}
+		effect = {
+			add_prestige = 25
+			
+            if = {
+				limit = {
+					tag = RUS
+					
+				}
+	  			crimea_region = {
+					limit = {
+						owned_by = RUS
+					}
+	  				remove_core = RUS
+	  				add_core = YAR
+	  				cede_province = YAR
+	  			}						
+								
+	  		}
+			
+			if = {
+				limit = {
+					tag = RUS
+					exists = YAR
+					RUS = {
+						any_subject_country = {
+							crimea_region = {
+								owned_by = PREV
+							}
+							tambov_area = {
+								owned_by = PREV
+							}
+							saratov_area = {
+								owned_by = PREV
+							}
+							
+							
+						}
+					}
+				}
+				}
+				
+				every_subject_country = {
+					limit = {
+						crimea_regiona = {
+							owned_by = PREV
+						}						
+					}
+					crimea_region = {
+						limit = {
+							owned_by = PREV
+						}
+						remove_core = RUS
+						remove_core = PREV
+						add_core = YAR
+						cede_province = YAR
+					}		
+					
+					
+					
+				}
+	  		}
+			
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+kingdom_Yaroslav22 = {
+		major = yes
+		potential = {
+			NOT = { exists = YAR }
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+                        
+			OR = {                           
+                             religion = othodox
+                             religion = protestant
+                             religion = reformed
+                            
+                             }
+             		
+			
+			
+			
+		}
+		allow = {
+			
+		      	owns_core_province = 464
+              OR = {
+				primary_culture = russian
+				primary_culture = ruthenian
+				primary_culture = byelorussian
+				primary_culture = romanian
+				tag = RUS
+			}           
+                        
+                        
+		}
+		effect = {
+			add_prestige = 25
+                       if = {
+				limit = {
+					tag = RUS
+					
+				}
+	  			saratov_area = {
+					limit = {
+						owned_by = RUS
+					}
+	  				remove_core = RUS
+	  				add_core = YAR
+	  				cede_province = YAR
+	  			}
+	  		}
+
+
+
+
+			
+				release = YAR
+				YAR = { change_primary_culture = ROOT }
+			
+			if = {
+				
+				change_tag = YAR
+				if = {
+					limit = { has_custom_ideas = no }
+					country_event = { id = ideagroups.1 } #Swap Ideas
+				}
+			}
+			YAR = { vassal_of = RUS }
+			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	
+	
+
+}

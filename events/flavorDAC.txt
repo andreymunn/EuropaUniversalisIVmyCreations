@@ -1,0 +1,2431 @@
+########################################
+# Flavor Events for Wallachia
+#
+# Scripted by Sara Wendel-Örtqvist
+########################################
+
+namespace = flavor_dac
+is_playing_historical_setup = yes
+
+# Vlad the Impaler!
+country_event = {
+	id = flavor_dac.1 # id = 3832
+	title = "flavor_dac.EVTNAME1"
+	desc = "flavor_dac.EVTDESC1"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ROOT
+		is_year = 1450
+		NOT = { is_year = 1800 }
+		vassal_of = TUR
+		dynasty = ROOT
+	}
+	
+	mean_time_to_happen = {
+		months = 2000
+	}
+	
+	option = {
+		name = "flavor_wal.EVTOPTA1"
+		TUR = {
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_displeased
+				years = 50
+			}
+		}
+		add_adm_power = 50
+	}
+	option = {
+		name = "flavor_wal.EVTOPTB1"
+		TUR = {
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_good_relations
+				years = 50
+			}
+		}
+	}
+}
+
+# Napoléon Bonaparte
+country_event = {
+	id = flavor_dac.2
+	title = "flavor_fra.EVTNAME3148"
+	desc = "flavor_fra.EVTDESC3148"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = FRA_had_event_3148 }
+		has_country_flag = FRA_french_revolution
+		is_year = 1446
+		tag = ROOT
+		is_revolution_target = yes
+		NOT = { dynasty = "Musat" }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+	
+	immediate = {
+		set_country_flag = FRA_had_event_3148
+	}
+	
+	option = {		# We need Brilliant Leadership!
+		name = "flavor_fra.EVTOPTA3148"
+		add_stability = -1
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			hidden_effect = {
+				kill_heir = yes
+			}
+		}
+		define_ruler = {
+			name = "Stefan cel Mare"
+			dynasty = "Musat" 
+			adm = 6
+			dip = 5
+			mil = 6
+		}
+	}
+	option = {		# We don't want a new Ceasar
+		name = "flavor_fra.EVTOPTB3148"
+		add_stability = 3
+	}
+}
+
+# Napoléon Bonaparte
+country_event = {
+	id = flavor_dac.3
+	title = "flavor_fra.EVTNAME3148"
+	desc = "flavor_fra.EVTDESC3148"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = FRA_had_event_3148 }
+		has_country_flag = FRA_french_revolution
+		is_year = 1446
+		tag = ROOT
+		is_revolution_target = yes
+		NOT = { dynasty = "Muntean" }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+	
+	immediate = {
+		set_country_flag = FRA_had_event_3148
+	}
+	
+	option = {		# We need Brilliant Leadership!
+		name = "flavor_fra.EVTOPTA3148"
+		add_stability = -1
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			hidden_effect = {
+				kill_heir = yes
+			}
+		}
+		define_ruler = {
+			name = "Andrei of Dacia"
+			dynasty = "Muntean" 
+			adm = 6
+			dip = 6
+			mil = 6
+		}
+		leader = {	
+		name = "Andrei of Dacia"	
+		type = general		
+		rank = 6	
+		fire = 6	
+		shock = 6	
+		manuever = 6	
+		siege = 6	
+		
+	} 
+	}
+	option = {		# We don't want a new Ceasar
+		name = "flavor_fra.EVTOPTB3148"
+		add_stability = 5
+		add_army_tradition = 77
+		add_navy_tradition = 77
+	}
+}
+
+
+# Napoléon Bonaparte
+country_event = {
+	id = flavor_dac.4
+	title = "flavor_fra.EVTNAME3148"
+	desc = "flavor_fra.EVTDESC3148"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = FRA_had_event_3148 }
+		has_country_flag = FRA_french_revolution
+		is_year = 1446
+		tag = ROOT
+		is_revolution_target = yes
+		NOT = { dynasty = "Muntean" }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+	
+	immediate = {
+		set_country_flag = FRA_had_event_3148
+	}
+	
+	option = {		# We need Brilliant Leadership!
+		name = "flavor_fra.EVTOPTA3148"
+		add_stability = -1
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			hidden_effect = {
+				kill_heir = yes
+			}
+		}
+		define_ruler = {
+			name = "Andrei"
+			dynasty = "Muntean" 
+			adm = 6
+			dip = 6
+			mil = 6
+
+		}
+	}
+	option = {		# We don't want a new Ceasar
+		name = "flavor_fra.EVTOPTB3148"
+		add_stability = 3
+                add_army_tradition = 55
+		add_navy_tradition = 55
+		add_mil_power = 666
+                add_prestige = 35
+		add_adm_power = 444
+	}
+}
+
+
+# Napoléon Bonaparte
+country_event = {
+	id = flavor_dac.5
+	title = "flavor_fra.EVTNAME3148"
+	desc = "flavor_fra.EVTDESC3148"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = FRA_had_event_3148 }
+		has_country_flag = FRA_french_revolution
+		is_year = 1446
+		tag = ROOT
+		is_revolution_target = yes
+		NOT = { dynasty = "Muntean" }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+	
+	immediate = {
+		set_country_flag = FRA_had_event_3148
+	}
+	
+	option = {		# We need Brilliant Leadership!
+		name = "flavor_fra.EVTOPTA3148"
+		add_stability = -1
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			hidden_effect = {
+				kill_heir = yes
+			}
+		}
+		define_ruler = {
+			name = "Alexandru"
+			dynasty = "Muntean" 
+			adm = 4
+			dip = 6
+			mil = 4
+
+		}
+	}
+	option = {		# We don't want a new Ceasar
+		name = "flavor_fra.EVTOPTB3148"
+		add_stability = 3
+	}
+}
+
+# Napoléon Bonaparte
+country_event = {
+	id = flavor_dac.6
+	title = "flavor_fra.EVTNAME3148"
+	desc = "flavor_fra.EVTDESC3148"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = FRA_had_event_3148 }
+		has_country_flag = FRA_french_revolution
+		is_year = 1446
+		tag = ROOT
+		is_revolution_target = yes
+		NOT = { dynasty = "Muntean" }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+	
+	immediate = {
+		set_country_flag = FRA_had_event_3148
+	}
+	
+	option = {		# We need Brilliant Leadership!
+		name = "flavor_fra.EVTOPTA3148"
+		add_stability = -1
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			hidden_effect = {
+				kill_heir = yes
+			}
+		}
+		define_ruler = {
+			name = "Petru Rares"
+			dynasty = "Muntean" 
+			adm = 6
+			dip = 5
+			mil = 4
+
+		}
+	}
+	option = {		# We don't want a new Ceasar
+		name = "flavor_fra.EVTOPTB3148"
+		add_stability = 3
+	}
+}
+
+# Napoléon Bonaparte
+country_event = {
+	id = flavor_dac.7
+	title = "flavor_fra.EVTNAME3148"
+	desc = "flavor_fra.EVTDESC3148"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = FRA_had_event_3148 }
+		has_country_flag = FRA_french_revolution
+		is_year = 1446
+		tag = ROOT
+		is_revolution_target = yes
+		
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+	
+	immediate = {
+		set_country_flag = FRA_had_event_3148
+	}
+	
+	option = {		# We need Brilliant Leadership!
+		name = "flavor_fra.EVTOPTA3148"
+		add_stability = -1
+		
+		define_ruler = {
+			name = "Andrei II"
+			dynasty = ROOT
+			adm = 6
+			dip = 5
+			mil = 5
+
+		}
+	}
+	option = {		# We don't want a new Ceasar
+		name = "flavor_fra.EVTOPTB3148"
+		add_stability = 3
+	}
+}
+
+# Napoléon Bonaparte
+country_event = {
+	id = flavor_dac.8
+	title = "flavor_fra.EVTNAME3148"
+	desc = "flavor_fra.EVTDESC3148"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = FRA_had_event_3148 }
+		has_country_flag = FRA_french_revolution
+		is_year = 1446
+		tag = ROOT
+		is_revolution_target = yes
+		
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+	
+	immediate = {
+		set_country_flag = FRA_had_event_3148
+	}
+	
+	option = {		# We need Brilliant Leadership!
+		name = "flavor_fra.EVTOPTA3148"
+		add_stability = -1
+		
+		define_ruler = {
+			name = "Andrei III"
+			dynasty = ROOT
+			adm = 6
+			dip = 5
+			mil = 5
+
+		}
+	}
+	option = {		# We don't want a new Ceasar
+		name = "flavor_fra.EVTOPTB3148"
+		add_stability = 3
+	}
+}
+
+country_event = {
+	id = flavor_dac.9
+	title = "flavor_fra.EVTNAME3148"
+	desc = "flavor_fra.EVTDESC3148"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = FRA_had_event_3148 }
+		has_country_flag = FRA_french_revolution
+		is_year = 1446
+		tag = ROOT
+		is_revolution_target = yes
+		
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+	
+	immediate = {
+		set_country_flag = FRA_had_event_3148
+	}
+	
+	option = {		# We need Brilliant Leadership!
+		name = "flavor_fra.EVTOPTA3148"
+		add_stability = -1
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			
+		}
+		define_ruler = {
+			name = "Andrei"
+			dynasty = ROOT 
+			adm = 6
+			dip = 6
+			mil = 6
+
+		}
+	}
+	option = {		# We don't want a new Ceasar
+		name = "flavor_fra.EVTOPTB3148"
+		add_stability = 3
+                add_army_tradition = 55
+		add_navy_tradition = 55
+		add_mil_power = 666
+                add_dip_power = 555
+                add_prestige = 35
+		add_adm_power = 444
+	}
+}
+
+country_event = {
+	id = flavor_dac.10
+	title = "EVTNAME9479"
+	desc = "EVTDESC9479"
+	picture = COURT_eventPicture
+	
+	trigger = {
+		NOT = {
+			government = revolutionary_empire
+		}
+		has_country_modifier = separation_of_powers
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA9479"
+		remove_country_modifier = separation_of_powers
+		add_stability = -2
+		random_owned_province = {
+			limit = {
+				is_core = ROOT
+			}
+			noble_rebels = 3
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB9479"
+		change_government = revolutionary_empire
+		add_stability = 3
+	}
+}
+
+country_event = {
+	id = flavor_dac.11
+	title = "EVTNAME9479"
+	desc = "EVTDESC9479"
+	picture = COURT_eventPicture
+	
+	trigger = {
+		NOT = {
+			government = my_republic
+		}
+		has_country_modifier = separation_of_powers
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA9479"
+		remove_country_modifier = separation_of_powers
+		add_stability = 1
+		random_owned_province = {
+			limit = {
+				is_core = ROOT
+			}
+			noble_rebels = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB9479"
+		change_government = my_republic
+		add_stability = 3
+	}
+}
+
+
+country_event = {
+	id = flavor_dac.12
+	title = "EVTNAME9479"
+	desc = "EVTDESC9479"
+	picture = COURT_eventPicture
+	
+	trigger = {
+		NOT = {
+			government = elective_monarchy
+		}
+		has_country_modifier = separation_of_powers
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA9479"
+		remove_country_modifier = separation_of_powers
+		add_stability = -1
+		random_owned_province = {
+			limit = {
+				is_core = ROOT
+			}
+			noble_rebels = 3
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB9479"
+		change_government = elective_monarchy
+		add_stability = 3
+	}
+}
+
+
+
+
+
+
+
+country_event = {
+	id = flavor_dac.13
+	title = "EVTNAME9479"
+	desc = "EVTDESC9479"
+	picture = COURT_eventPicture
+	
+	trigger = {
+		NOT = {
+			government = english_monarchy
+		}
+		has_country_modifier = separation_of_powers
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA9479"
+		remove_country_modifier = separation_of_powers
+		add_stability = -2
+		random_owned_province = {
+			limit = {
+				is_core = ROOT
+			}
+			noble_rebels = 3
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB9479"
+		change_government = english_monarchy
+		add_stability = 3
+	}
+}
+
+
+
+country_event = {
+	id = flavor_dac.15
+	title = "EVTNAME9479"
+	desc = "EVTDESC9479"
+	picture = COURT_eventPicture
+	
+	trigger = {
+		NOT = {
+			government = andre_monarchy
+		}
+		has_country_modifier = separation_of_powers
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA9479"
+		remove_country_modifier = separation_of_powers
+		add_stability = +1
+		random_owned_province = {
+			limit = {
+				is_core = ROOT
+			}
+			noble_rebels = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB9479"
+		change_government = andre_monarchy
+		add_stability = 3
+	}
+}
+
+country_event = {
+	id = flavor_dac.16
+	title = "EVTNAME9479"
+	desc = "EVTDESC9479"
+	picture = COURT_eventPicture
+	
+	trigger = {
+		NOT = {
+			government = new1_monarchy
+		}
+		has_country_modifier = separation_of_powers
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA9479"
+		remove_country_modifier = separation_of_powers
+		add_stability = +1
+		random_owned_province = {
+			limit = {
+				is_core = ROOT
+			}
+			noble_rebels = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB9479"
+		change_government = new1_monarchy
+		add_stability = 3
+	}
+}
+country_event = {
+	id = flavor_dac.17
+	title = "EVTNAME9479"
+	desc = "EVTDESC9479"
+	picture = COURT_eventPicture
+	
+	trigger = {
+		NOT = {
+			government = andre2_monarchy
+		}
+		has_country_modifier = separation_of_powers
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA9479"
+		remove_country_modifier = separation_of_powers
+		add_stability = +1
+		random_owned_province = {
+			limit = {
+				is_core = ROOT
+			}
+			noble_rebels = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB9479"
+		change_government = andre2_monarchy
+		add_stability = 3
+	}
+}
+country_event = {
+	id = flavor_dac.18
+	title = "EVTNAME9479"
+	desc = "EVTDESC9479"
+	picture = COURT_eventPicture
+	
+	trigger = {
+		NOT = {
+			government = united_republic
+		}
+		has_country_modifier = separation_of_powers
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA9479"
+		remove_country_modifier = separation_of_powers
+		add_stability = +1
+		random_owned_province = {
+			limit = {
+				is_core = ROOT
+			}
+			noble_rebels = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB9479"
+		change_government = united_republic
+		add_stability = 3
+	}
+}
+
+
+
+country_event = {
+	id = flavor_dac.19
+	title = "EVTNAME9479"
+	desc = "EVTDESC9479"
+	picture = COURT_eventPicture
+	
+	trigger = {
+		NOT = {
+			government = monastic_order_government
+		}
+		has_country_modifier = separation_of_powers
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA9479"
+		remove_country_modifier = separation_of_powers
+		add_stability = -2
+		random_owned_province = {
+			limit = {
+				is_core = ROOT
+			}
+			noble_rebels = 3
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB9479"
+		change_government = monastic_order_government
+		add_stability = 3
+	}
+}
+}
+
+
+
+
+
+# dynasty Habsburg
+country_event = {
+	id = flavor_dac.20
+	title = "flavor_fra.EVTNAME3148"
+	desc = "flavor_fra.EVTDESC3148"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = FRA_had_event_3148 }
+		has_country_flag = FRA_french_revolution
+		is_year = 1446
+		tag = ROOT
+		is_revolution_target = yes
+		NOT = { dynasty = "von Habsburg" }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+	
+	immediate = {
+		set_country_flag = FRA_had_event_3148
+	}
+	
+	option = {		# We need Brilliant Leadership!
+		name = "flavor_fra.EVTOPTA3148"
+		add_stability = -1
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			hidden_effect = {
+				kill_heir = yes
+			}
+		}
+		define_ruler = {
+			name = "Andrei Khagan"
+			dynasty = "von Habsburg" 
+			adm = 6
+			dip = 6
+			mil = 6
+		}
+		
+	}
+	option = {		# We don't want a new Ceasar
+		name = "flavor_fra.EVTOPTB3148"
+		add_stability = 5
+		add_army_tradition = 77
+		add_navy_tradition = 77
+	}
+}
+
+
+# Honhenzolren
+country_event = {
+	id = flavor_dac.21
+	title = "flavor_fra.EVTNAME3148"
+	desc = "flavor_fra.EVTDESC3148"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = FRA_had_event_3148 }
+		has_country_flag = FRA_french_revolution
+		is_year = 1446
+		tag = ROOT
+		is_revolution_target = yes
+		NOT = { dynasty = "von Hohenzollern" }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+	
+	immediate = {
+		set_country_flag = FRA_had_event_3148
+	}
+	
+	option = {		# We need Brilliant Leadership!
+		name = "flavor_fra.EVTOPTA3148"
+		add_stability = -1
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			hidden_effect = {
+				kill_heir = yes
+			}
+		}
+		define_ruler = {
+			name = "Andrei"
+			dynasty = "von Hohenzollern" 
+			adm = 6
+			dip = 6
+			mil = 6
+
+		}
+	}
+	option = {		# We don't want a new Ceasar
+		name = "flavor_fra.EVTOPTB3148"
+		add_stability = 3
+                add_army_tradition = 55
+		add_navy_tradition = 55
+		add_mil_power = 666
+                add_prestige = 35
+		add_adm_power = 444
+	}
+}
+
+
+# Bourbon
+country_event = {
+	id = flavor_dac.22
+	title = "flavor_fra.EVTNAME3148"
+	desc = "flavor_fra.EVTDESC3148"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = FRA_had_event_3148 }
+		has_country_flag = FRA_french_revolution
+		is_year = 1446
+		tag = ROOT
+		is_revolution_target = yes
+		NOT = { dynasty = "de Bourbon" }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+	
+	immediate = {
+		set_country_flag = FRA_had_event_3148
+	}
+	
+	option = {		# We need Brilliant Leadership!
+		name = "flavor_fra.EVTOPTA3148"
+		add_stability = -1
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			hidden_effect = {
+				kill_heir = yes
+			}
+		}
+		define_ruler = {
+			name = "Andrei"
+			dynasty = "de Bourbon" 
+			adm = 6
+			dip = 6
+			mil = 6
+
+		}
+	}
+	option = {		# We don't want a new Ceasar
+		name = "flavor_fra.EVTOPTB3148"
+		add_stability = 3
+                add_army_tradition = 55
+		add_navy_tradition = 55
+		add_mil_power = 666
+                add_prestige = 35
+		add_adm_power = 444
+	}
+}
+
+
+# Rurikovich
+country_event = {
+	id = flavor_dac.23
+	title = "flavor_fra.EVTNAME3148"
+	desc = "flavor_fra.EVTDESC3148"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = FRA_had_event_3148 }
+		has_country_flag = FRA_french_revolution
+		is_year = 1446
+		tag = ROOT
+		is_revolution_target = yes
+		NOT = { dynasty = "Rurikovich" }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+	
+	immediate = {
+		set_country_flag = FRA_had_event_3148
+	}
+	
+	option = {		# We need Brilliant Leadership!
+		name = "flavor_fra.EVTOPTA3148"
+		add_stability = -1
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			hidden_effect = {
+				kill_heir = yes
+			}
+		}
+		define_ruler = {
+			name = "Andrei"
+			dynasty = "Rurikovich" 
+			adm = 6
+			dip = 6
+			mil = 6
+
+		}
+	}
+	option = {		# We don't want a new Ceasar
+		name = "flavor_fra.EVTOPTB3148"
+		add_stability = 3
+                add_army_tradition = 55
+		add_navy_tradition = 55
+		add_mil_power = 666
+                add_prestige = 35
+		add_adm_power = 444
+	}
+}
+
+
+# de Medici
+country_event = {
+	id = flavor_dac.24
+	title = "flavor_fra.EVTNAME3148"
+	desc = "flavor_fra.EVTDESC3148"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = FRA_had_event_3148 }
+		has_country_flag = FRA_french_revolution
+		is_year = 1446
+		tag = ROOT
+		is_revolution_target = yes
+		NOT = { dynasty = "de' Medici" }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+	
+	immediate = {
+		set_country_flag = FRA_had_event_3148
+	}
+	
+	option = {		# We need Brilliant Leadership!
+		name = "flavor_fra.EVTOPTA3148"
+		add_stability = -1
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			hidden_effect = {
+				kill_heir = yes
+			}
+		}
+		define_ruler = {
+			name = "Andrei"
+			dynasty = "de' Medici" 
+			adm = 6
+			dip = 6
+			mil = 6
+
+		}
+	}
+	option = {		# We don't want a new Ceasar
+		name = "flavor_fra.EVTOPTB3148"
+		add_stability = 3
+                add_army_tradition = 55
+		add_navy_tradition = 55
+		add_mil_power = 666
+                add_prestige = 35
+		add_adm_power = 444
+	}
+}
+
+
+# Romanov
+country_event = {
+	id = flavor_dac.25
+	title = "flavor_fra.EVTNAME3148"
+	desc = "flavor_fra.EVTDESC3148"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = FRA_had_event_3148 }
+		has_country_flag = FRA_french_revolution
+		is_year = 1446
+		tag = ROOT
+		is_revolution_target = yes
+		NOT = { dynasty = "Romanov" }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+	
+	immediate = {
+		set_country_flag = FRA_had_event_3148
+	}
+	
+	option = {		# We need Brilliant Leadership!
+		name = "flavor_fra.EVTOPTA3148"
+		add_stability = -1
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			hidden_effect = {
+				kill_heir = yes
+			}
+		}
+		define_ruler = {
+			name = "Andrei"
+			dynasty = "Romanov" 
+			adm = 6
+			dip = 6
+			mil = 6
+
+		}
+	}
+	option = {		# We don't want a new Ceasar
+		name = "flavor_fra.EVTOPTB3148"
+		add_stability = 3
+                add_army_tradition = 55
+		add_navy_tradition = 55
+		add_mil_power = 666
+                add_prestige = 35
+		add_adm_power = 444
+	}
+}
+
+
+country_event = {
+	id = 94691
+	title = "EVTNAME9469"
+	desc = "EVTDESC9469"
+	picture = NEW_HEIR_eventPicture
+	
+	trigger = {
+		
+		is_lesser_in_union = no
+		has_heir = no
+		has_regency = no
+	}
+	
+	mean_time_to_happen = {
+		months = 2000
+	}
+	
+	option = {
+		name = "EVTOPTA9469"
+		define_heir = {
+			dynasty = ROOT
+			name = "Alexandru"
+			claim = 100
+			mil = 6
+		}
+	}
+	option = {
+		name = "EVTOPTB9469"
+		define_heir = {
+			dynasty = ROOT
+			name = "Andrei"
+			claim = 100
+			adm = 6
+                        mil = 6
+		}
+	}
+      
+	option = {
+		name = "EVTOPTC9469"
+		define_heir = {
+			dynasty = ROOT
+			name = "Vasile"
+			claim = 100
+			dip = 6
+		}
+	}
+       option = {
+		name = "EVTOPTC9469"
+		define_heir = {
+			dynasty = ROOT
+			name = "Petru"
+			claim = 100
+			mil = 6
+		}
+	}
+      option = {
+		name = "EVTOPTC9469"
+		define_heir = {
+			dynasty = ROOT
+			name = "Mihai"
+			claim = 100
+			dip = 6
+		}
+	}		
+}
+
+country_event = {
+	id = 94692
+	title = "EVTNAME9469"
+	desc = "EVTDESC9469"
+	picture = NEW_HEIR_eventPicture
+	
+	trigger = {
+		is_lesser_in_union = no
+		has_heir = no
+		has_regency = no
+	}
+	
+	mean_time_to_happen = {
+		months = 2000
+	}
+	
+	option = {
+		name = "EVTOPTA9469"
+		define_heir = {
+			dynasty = ROOT
+			name = "Alexandru II"
+			claim = 100
+			mil = 6
+		}
+	}
+	option = {
+		name = "EVTOPTB9469"
+		define_heir = {
+			dynasty = ROOT
+			name = "Andrei II"
+			claim = 100
+			adm = 6
+                        mil = 6
+		}
+	}
+      	
+       option = {
+		name = "EVTOPTC9469"
+		define_heir = {
+			dynasty = ROOT
+			name = "Petru II"
+			claim = 100
+			mil = 6
+		}
+	}
+      option = {
+		name = "EVTOPTC9469"
+		define_heir = {
+			dynasty = ROOT
+			name = "Mihai II"
+			claim = 100
+			dip = 6
+		}
+	}		
+}
+
+country_event = {
+	id = 94693
+	title = "EVTNAME9469"
+	desc = "EVTDESC9469"
+	picture = NEW_HEIR_eventPicture
+	
+	trigger = {
+		is_lesser_in_union = no
+		has_heir = no
+		has_regency = no
+	}
+	
+	mean_time_to_happen = {
+		months = 2000
+	}
+	
+	option = {
+		name = "EVTOPTA9469"
+		define_heir = {
+			dynasty = ROOT
+			name = "Alexandru II"
+			claim = 100
+			mil = 6
+		}
+	}
+	option = {
+		name = "EVTOPTB9469"
+		define_heir = {
+			dynasty = ROOT
+			name = "Andrei II"
+			claim = 100
+			adm = 6
+                        mil = 6
+		}
+	}
+      	
+       option = {
+		name = "EVTOPTC9469"
+		define_heir = {
+			dynasty = ROOT
+			name = "Petru II"
+			claim = 100
+			mil = 6
+		}
+	}
+      option = {
+		name = "EVTOPTC9469"
+		define_heir = {
+			dynasty = ROOT
+			name = "Mihai II"
+			claim = 100
+			dip = 6
+		}
+	}		
+}
+
+
+
+
+
+
+# Vladimir Putin
+country_event = {
+	id = flavor_dac.51
+	title = "flavor_fra.EVTNAME3148"
+	desc = "flavor_fra.EVTDESC3148"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = FRA_had_event_3148 }
+		has_country_flag = FRA_french_revolution
+		is_year = 1446
+		tag = ROOT
+		is_revolution_target = yes
+		NOT = { dynasty = "Putin" }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+	
+	immediate = {
+		set_country_flag = FRA_had_event_3148
+	}
+	
+	option = {		# We need Brilliant Leadership!
+		name = "flavor_fra.EVTOPTA3148"
+		add_stability = -1
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			hidden_effect = {
+				kill_heir = yes
+			}
+		}
+		define_ruler = {
+			name = "Vladimir"
+			dynasty = "Putin" 
+			adm = 6
+			dip = 4
+			mil = 6
+		}
+	}
+	option = {		# We don't want a new Ceasar
+		name = "flavor_fra.EVTOPTB3148"
+		add_stability = 3
+	}
+}
+
+# Adolf Hitler
+country_event = {
+	id = flavor_dac.52
+	title = "flavor_fra.EVTNAME3148"
+	desc = "flavor_fra.EVTDESC3148"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = FRA_had_event_3148 }
+		has_country_flag = FRA_french_revolution
+		is_year = 1446
+		tag = ROOT
+		is_revolution_target = yes
+		NOT = { dynasty = "Hitler" }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+	
+	immediate = {
+		set_country_flag = FRA_had_event_3148
+	}
+	
+	option = {		# We need Brilliant Leadership!
+		name = "flavor_fra.EVTOPTA3148"
+		add_stability = -1
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			hidden_effect = {
+				kill_heir = yes
+			}
+		}
+		define_ruler = {
+			name = "Adolf"
+			dynasty = "Hitler" 
+			adm = 6
+			dip = 3
+			mil = 6
+		}
+	}
+	option = {		# We don't want a new Ceasar
+		name = "flavor_fra.EVTOPTB3148"
+		add_stability = 3
+	}
+}
+
+
+# Andrei II
+country_event = {
+	id = flavor_dac.42
+	title = "flavor_fra.EVTNAME3148"
+	desc = "flavor_fra.EVTDESC3148"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = FRA_had_event_3148 }
+		has_country_flag = FRA_french_revolution
+		is_year = 1446
+		tag = ROOT
+		is_revolution_target = yes
+		NOT = { dynasty = "Muntean" }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+	
+	immediate = {
+		set_country_flag = FRA_had_event_3148
+	}
+	
+	option = {		# We need Brilliant Leadership!
+		name = "flavor_fra.EVTOPTA3148"
+		add_stability = +1
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			hidden_effect = {
+				kill_heir = yes
+			}
+		}
+		define_ruler = {
+			name = "Andrei II"
+			dynasty = "Muntean" 
+			adm = 6
+			dip = 5
+			mil = 6
+		}
+	}
+	option = {		# We don't want a new Ceasar
+		name = "flavor_fra.EVTOPTB3148"
+		add_stability = 3
+	}
+}
+
+
+# Andrei III
+country_event = {
+	id = flavor_dac.43
+	title = "flavor_fra.EVTNAME3148"
+	desc = "flavor_fra.EVTDESC3148"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = FRA_had_event_3148 }
+		has_country_flag = FRA_french_revolution
+		is_year = 1446
+		tag = ROOT
+		is_revolution_target = yes
+		NOT = { dynasty = "Muntean" }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+	
+	immediate = {
+		set_country_flag = FRA_had_event_3148
+	}
+	
+	option = {		# We need Brilliant Leadership!
+		name = "flavor_fra.EVTOPTA3148"
+		add_stability = +1
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			hidden_effect = {
+				kill_heir = yes
+			}
+		}
+		define_ruler = {
+			name = "Andrei III"
+			dynasty = "Muntean" 
+			adm = 6
+			dip = 6
+			mil = 6
+		}
+	}
+	option = {		# We don't want a new Ceasar
+		name = "flavor_fra.EVTOPTB3148"
+		add_stability = 3
+	}
+}
+
+# Andrei IV
+country_event = {
+	id = flavor_dac.44
+	title = "flavor_fra.EVTNAME3148"
+	desc = "flavor_fra.EVTDESC3148"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = FRA_had_event_3148 }
+		has_country_flag = FRA_french_revolution
+		is_year = 1446
+		tag = ROOT
+		is_revolution_target = yes
+		NOT = { dynasty = "Muntean" }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+	
+	immediate = {
+		set_country_flag = FRA_had_event_3148
+	}
+	
+	option = {		# We need Brilliant Leadership!
+		name = "flavor_fra.EVTOPTA3148"
+		add_stability = +1
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			hidden_effect = {
+				kill_heir = yes
+			}
+		}
+		define_ruler = {
+			name = "Andrei IV"
+			dynasty = "Muntean" 
+			adm = 6
+			dip = 5
+			mil = 6
+		}
+	}
+	option = {		# We don't want a new Ceasar
+		name = "flavor_fra.EVTOPTB3148"
+		add_stability = 3
+	}
+}
+
+country_event = {
+	id = flavor_dac.71
+	title = "flavor_fra.EVTNAME3148"
+	desc = "flavor_fra.EVTDESC3148"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = FRA_had_event_3148 }
+		has_country_flag = FRA_french_revolution
+		is_year = 1446
+		tag = ROOT
+		is_revolution_target = yes
+		NOT = { dynasty = "von Habsburg" }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+	
+	immediate = {
+		set_country_flag = FRA_had_event_3148
+	}
+	
+	option = {		# We need Brilliant Leadership!
+		name = "flavor_fra.EVTOPTA3148"
+		add_stability = +1
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			hidden_effect = {
+				kill_heir = yes
+			}
+		}
+		define_ruler = {
+			name = "Andrei "
+			dynasty = "von Habsburg" 
+			adm = 6
+			dip = 6
+			mil = 6
+
+		}
+	}
+	option = {		# We don't want a new Ceasar
+		name = "flavor_fra.EVTOPTB3148"
+		add_stability = 3
+                add_army_tradition = 55
+		add_navy_tradition = 55
+		add_mil_power = 666
+                add_prestige = 35
+		add_adm_power = 444
+	}
+}
+
+country_event = {
+	id = flavor_dac.72
+	title = "flavor_fra.EVTNAME3148"
+	desc = "flavor_fra.EVTDESC3148"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = FRA_had_event_3148 }
+		has_country_flag = FRA_french_revolution
+		is_year = 1446
+		tag = ROOT
+		is_revolution_target = yes
+		NOT = { dynasty = "de Bourbon" }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+	
+	immediate = {
+		set_country_flag = FRA_had_event_3148
+	}
+	
+	option = {		# We need Brilliant Leadership!
+		name = "flavor_fra.EVTOPTA3148"
+		add_stability = +1
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			hidden_effect = {
+				kill_heir = yes
+			}
+		}
+		define_ruler = {
+			name = "Andrei d'Orleans"
+			dynasty = "de Bourbon" 
+			adm = 6
+			dip = 6
+			mil = 6
+
+		}
+	}
+	option = {		# We don't want a new Ceasar
+		name = "flavor_fra.EVTOPTB3148"
+		add_stability = 3
+                add_army_tradition = 55
+		add_navy_tradition = 55
+		add_mil_power = 666
+                add_prestige = 35
+		add_adm_power = 444
+	}
+}
+country_event = {
+	id = flavor_dac.73
+	title = "flavor_fra.EVTNAME3148"
+	desc = "flavor_fra.EVTDESC3148"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = FRA_had_event_3148 }
+		has_country_flag = FRA_french_revolution
+		is_year = 1446
+		tag = ROOT
+		is_revolution_target = yes
+		NOT = { dynasty = "von Hohenzollern" }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+	
+	immediate = {
+		set_country_flag = FRA_had_event_3148
+	}
+	
+	option = {		# We need Brilliant Leadership!
+		name = "flavor_fra.EVTOPTA3148"
+		add_stability = +1
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			hidden_effect = {
+				kill_heir = yes
+			}
+		}
+		define_ruler = {
+			name = "Andrei "
+			dynasty = "von Hohenzollern" 
+			adm = 6
+			dip = 6
+			mil = 6
+
+		}
+	}
+	option = {		# We don't want a new Ceasar
+		name = "flavor_fra.EVTOPTB3148"
+		add_stability = 3
+                add_army_tradition = 55
+		add_navy_tradition = 55
+		add_mil_power = 666
+                add_prestige = 35
+		add_adm_power = 444
+	}
+}
+
+
+country_event = {
+	id = flavor_dac.97
+	title = "EVTNAME4001"
+	desc = "EVTDESC4001"
+	picture = WESTERNISATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = "EVTOPTA4001"
+		ai_chance = { factor = 3 }
+		random_owned_province = {
+			noble_rebels = 1
+		}
+	}
+	option = {
+		name = "EVTOPTB4001"
+		add_westernisation = +200
+	}
+}
+
+country_event = {
+	id = flavor_dac.98
+	title = "EVTNAME4004"
+	desc = "EVTDESC4004"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		government = monarchy
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA4004"
+		ai_chance = { factor = 3 }
+		add_legitimacy = +30
+	}
+	option = {
+		name = "EVTOPTB4004"
+		add_westernisation = +120
+	}
+}
+
+country_event = {
+	id = flavor_dac.99
+	title = "EVTNAME4009"
+	desc = "EVTDESC4009"
+	picture = WESTERNISATION_eventPicture
+
+	is_triggered_only = yes
+
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA4009"
+		add_army_tradition = +30
+		add_navy_tradition = +30
+	}
+	option = {
+		name = "EVTOPTB4009"
+		add_westernisation = +500
+	}
+}
+
+country_event = {
+	id = flavor_dac.102
+	title = "EVTNAME4009"
+	desc = "EVTDESC4009"
+	picture = WESTERNISATION_eventPicture
+
+	is_triggered_only = yes
+
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA4009"
+		add_army_tradition = +50
+		add_navy_tradition = +50
+	}
+	option = {
+		name = "EVTOPTB4009"                
+		global_missionary_strength = 0.5
+                diplomats = 2
+                merchants = 2
+                
+               land_morale = 0.25
+               land_forcelimit_modifier = 0.33
+		
+	}
+}
+
+country_event = {
+	id = flavor_dac.101
+	title = "EVTNAME4009"
+	desc = "EVTDESC4009"
+	picture = WESTERNISATION_eventPicture
+
+	is_triggered_only = yes
+
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA4009"
+		add_army_tradition = +40
+		add_navy_tradition = +40
+	}
+	option = {
+		name = "EVTOPTB4009"
+		change_technology_group = western
+	}
+}
+
+
+# National Bank pays dividends
+country_event = {
+	id = dac_bank.1
+	title = "EVTNAME6148"
+	desc = "EVTDESC6148"
+	picture = ECONOMY_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_idea_group = economic_ideas
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA6148"
+		add_years_of_income = 0.33
+	}
+}
+
+country_event = {
+	id = dac.1
+	title = "EVTNAME5027"
+	desc = "EVTDESC5027"
+	picture = REFORM_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		army_reformer = 2
+	}
+
+	mean_time_to_happen = {
+		days = 1
+		
+		modifier = {
+			factor = 2.0
+			mil = 4
+		}
+		modifier = {
+			factor = 2.0
+			luck = yes
+		}
+		modifier = {
+			factor = 0.66
+			NOT = { mil = 1 }
+		}
+	}
+
+
+	option = {
+		name = "flavor_brapru.EVTOPTA3518"		# Invest in army technology
+		ai_chance = { factor = 55 }
+		add_mil_power = 50
+	}
+	option = {
+		name = "EVTOPTB5027"		# Improve our existing military
+		ai_chance = { factor = 45 }
+		add_army_tradition = 20
+	}
+}
+#########################################################
+#		Reformation of the Navy 					  	#
+#########################################################
+
+country_event = {
+	id = dac.2
+	title = "EVTNAME5032"
+	desc = "EVTDESC5032"
+	picture = REFORM_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		naval_reformer = 2
+	}
+
+	mean_time_to_happen = {
+		days = 1
+		
+		modifier = {
+			factor = 2.0
+			mil = 4
+		}
+		modifier = {
+			factor = 2.0
+			luck = yes
+		}
+		modifier = {
+			factor = 0.66
+			NOT = { mil = 1 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA5032"		# Invest in naval technology
+		ai_chance = { factor = 55 }
+		add_dip_power = 50
+	}
+	option = {
+		name = "EVTOPTB5032"		# Improve our existing navy
+		ai_chance = { factor = 45 }
+		add_navy_tradition = 20
+	}
+}
+
+# For Freedom!
+country_event = {
+	id = dac.213
+	title = ideagroups.213.t
+	desc = ideagroups.213.d
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_idea_group = plutocracy_ideas
+		is_at_war = yes	
+		NOT = {	has_country_modifier =  "for_freedom" }
+	}
+
+	option = {
+		name = ideagroups.213.a
+		add_country_modifier = {
+			name = "for_freedom"
+			duration = 40
+		}
+	}
+}
+
+country_event = {
+	id = dac_dac.1
+	title = "EVTNAME862"
+	desc = "EVTDESC862"
+	picture = COLONIZATION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_idea = quest_for_the_new_world
+		capital_scope = { continent = europe }
+		any_owned_province = {
+			is_colony = yes
+			OR = {
+				continent = north_america
+				continent = south_america
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA862"
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 1095
+		}
+	}
+	option = {
+		name = "EVTOPTB862"
+		create_conquistador = 8
+                create_explorer = 5
+	}		
+}
+
+country_event = {
+	id = dac.111
+	title = "EVTNAME6406"
+	desc = "EVTDESC6406"
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			religion = animism
+			religion = shamanism
+			religion = totemism
+		}
+		is_westernising = yes
+		any_owned_province = {
+			any_neighbor_province = {
+				owner = { technology_group = western }
+				religion = zamolxism
+			}
+		}
+		NOT = { has_country_flag = refused_zamolxism }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA6406"
+		change_religion = zamolxism
+	}
+	option = {
+		name = "EVTOPTB6406"
+		add_westernisation = -120
+		set_country_flag = refused_zamolxism
+		
+	}
+}
+
+
+country_event = {
+	id = dac.114
+	title = "EVTNAME6406"
+	desc = "EVTDESC6406"
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			religion = animism
+			religion = shamanism
+			religion = totemism
+		}
+		is_westernising = yes
+		any_owned_province = {
+			any_neighbor_province = {
+				owner = { technology_group = western }
+				religion = orthodox
+			}
+		}
+		NOT = { has_country_flag = refused_orthodox }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA6406"
+		change_religion = orthodox
+	}
+	option = {
+		name = "EVTOPTB6406"
+		add_westernisation = -120
+		set_country_flag = refused_orthodox
+		
+	}
+}
+
+country_event = {
+	id = dac.115
+	title = "EVTNAME6406"
+	desc = "EVTDESC6406"
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			religion = animism
+			religion = shamanism
+			religion = totemism
+		}
+		is_westernising = yes
+		any_owned_province = {
+			any_neighbor_province = {
+				owner = { technology_group = western }
+				religion = sunni
+			}
+		}
+		NOT = { has_country_flag = refused_sunni }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA6406"
+		change_religion = sunni
+	}
+	option = {
+		name = "EVTOPTB6406"
+		add_westernisation = -120
+		set_country_flag = refused_sunni
+		
+	}
+}
+
+
+country_event = {
+	id = dac.116
+	title = "EVTNAME6406"
+	desc = "EVTDESC6406"
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			religion = animism
+			religion = shamanism
+			religion = totemism
+		}
+		is_westernising = yes
+		any_owned_province = {
+			any_neighbor_province = {
+				owner = { technology_group = western }
+				religion = sunni
+			}
+		}
+		NOT = { has_country_flag = refused_coptic }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA6406"
+		change_religion = coptic
+	}
+	option = {
+		name = "EVTOPTB6406"
+		add_westernisation = -120
+		set_country_flag = refused_coptic
+		
+	}
+}
+
+country_event = {
+	id = dac.117
+	title = "EVTNAME6406"
+	desc = "EVTDESC6406"
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			religion = animism
+			religion = shamanism
+			religion = totemisms
+		}
+		is_westernising = yes
+		any_owned_province = {
+			any_neighbor_province = {
+				owner = { technology_group = western }
+				religion = confucianism
+			}
+		}
+		NOT = { has_country_flag = refused_confucianism }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA6406"
+		change_religion = confucianism
+	}
+	option = {
+		name = "EVTOPTB6406"
+		add_westernisation = -120
+		set_country_flag = refused_confucianism
+		
+	}
+}
+
+
+country_event = {
+	id = flavor_dac.200
+	title = "flavor_fra.EVTNAME3148"
+	desc = "flavor_fra.EVTDESC3148"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = FRA_had_event_3148 }
+		has_country_flag = FRA_french_revolution
+		is_year = 1446
+		tag = ROOT
+		is_revolution_target = yes
+		NOT = { dynasty = "Muntean" }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+	
+	immediate = {
+		set_country_flag = FRA_had_event_3148
+	}
+	
+	option = {		# We need Brilliant Leadership!
+		name = "flavor_fra.EVTOPTA3148"
+		add_stability = -1
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			hidden_effect = {
+				kill_heir = yes
+			}
+		}
+		define_ruler = {
+			name = "Andrei d'Orleans"
+			dynasty = "Muntean" 
+			adm = 4
+			dip = 4
+			mil = 5
+
+		}
+	}
+	option = {		# We don't want a new Ceasar
+		name = "flavor_fra.EVTOPTB3148"
+		add_stability = 3
+                add_army_tradition = 55
+		add_navy_tradition = 55
+		add_mil_power = 666
+                add_prestige = 35
+		add_adm_power = 444
+	}
+}
+
+country_event = {
+	id = flavor_dac.201
+	title = "flavor_fra.EVTNAME3148"
+	desc = "flavor_fra.EVTDESC3148"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = FRA_had_event_3148 }
+		has_country_flag = FRA_french_revolution
+		is_year = 1446
+		tag = ROOT
+		is_revolution_target = yes
+		NOT = { dynasty = "Muntean" }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.75
+			is_at_war = yes
+		}
+	}
+	
+	immediate = {
+		set_country_flag = FRA_had_event_3148
+	}
+	
+	option = {		# We need Brilliant Leadership!
+		name = "flavor_fra.EVTOPTA3148"
+		add_stability = -1
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			hidden_effect = {
+				kill_heir = yes
+			}
+		}
+		define_ruler = {
+			name = "Andrei II"
+			dynasty = "Muntean" 
+			adm = 4
+			dip = 4
+			mil = 4
+
+		}
+	}
+	option = {		# We don't want a new Ceasar
+		name = "flavor_fra.EVTOPTB3148"
+		add_stability = 3
+                add_army_tradition = 55
+		add_navy_tradition = 55
+		add_mil_power = 666
+                add_prestige = 35
+		add_adm_power = 444
+	}
+}
+

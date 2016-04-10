@@ -1,0 +1,137 @@
+ROM_ideas2 = {
+	start = {
+		discipline = 0.5
+		tolerance_own = 10
+	}
+
+	bonus = {
+		relations_decay_of_me = 0.66
+	}
+
+	trigger = {
+		tag = RO2
+	}
+
+	free = yes # will be added at load
+
+	flexible_recruiting = {
+		manpower_recovery_speed = 0.2
+	}
+	romanian_commanders = {
+		leader_land_manuever = 2
+                navy_tradition = 0.5
+                army_tradition = 0.5
+	}
+	expanded_dockyards = {
+		naval_forcelimit_modifier = 0.5
+	}
+	latin_island2 = {
+		merchants = 8
+                colonists = 1
+                diplomats = 1
+                
+	}
+	rom_peasant_soldiers = {
+		infantry_cost = -0.1
+		global_manpower_modifier = 0.1
+	}
+	phanariote_traders = {
+		global_trade_power = 0.15
+	}
+	romanian_army = {
+		land_forcelimit_modifier = 0.68
+                infantry_power = 1.5
+	}
+}
+
+AN1_ideas = {
+	start = {
+		infantry_power = 1.5
+		trade_efficiency = 1.0
+	}
+	
+	bonus = {
+		merchants = 10
+	}
+	
+	trigger = {
+       
+        OR  = {
+		tag = AN1
+                tag = AN3
+                tag = HOK
+                
+        }
+	}
+	free = yes		#will be added at load.
+	
+	royal_navy = {
+		navy_tradition = 0.25
+		heavy_ship_power = 0.10
+	}
+	lon_conquistadores = {
+		colonists = 3
+	}
+	case_de_india = {
+		global_trade_power = 0.5
+	}
+	the_bandeirantes = {
+		merchants = 3
+	}
+	expanded_dockyards = {
+		naval_forcelimit_modifier = 0.5
+	}
+	liberty_egalite_fraternity = {
+		tolerance_heathen = 5
+		tolerance_heretic = 5
+	}
+	the_streltsy = {
+		land_forcelimit_modifier = 0.50
+	}
+}
+
+AN2_ideas = {
+	start = {
+		infantry_power = 3.3
+		trade_efficiency = 1.0
+	}
+	
+	bonus = {
+		merchants = 10
+	}
+	
+	trigger = {
+       
+        OR  = {
+		tag = AN2
+                
+        }
+	}
+	free = yes		#will be added at load.
+	
+	royal_navy = {
+		navy_tradition = 0.25
+		heavy_ship_power = 0.10
+	}
+	empire_of_liberty = {
+		colonists = 1
+	}
+	production_trade = {
+		global_trade_power = 0.5
+                production_efficiency = 0.33
+	}
+	the_bandeirantes_comerce = {
+                cb_on_primitives = yes
+		merchants = 3
+	}
+	expanded_dockyards = {
+		naval_forcelimit_modifier = 0.5
+	}
+	liberty_egalite_fraternity = {
+		tolerance_heathen = 5
+		tolerance_heretic = 5
+	}
+	the_streltsy = {
+		land_forcelimit_modifier = 0.50
+	}
+}

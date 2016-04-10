@@ -1,0 +1,180 @@
+country_decisions = {
+
+Romanian_Renaissance_test = {
+
+           potential = {
+		   
+		        OR = {
+				    ai = no
+				     is_playing_custom_nation = no
+			       }
+			    OR = {
+			 tag = RMN
+			 tag = WAL
+			 tag = MOL
+			 tag = TRA
+			 tag = TUR
+			 tag = AN1
+			 tag = HAB
+			 tag = RUS
+			}
+			
+			}		
+		allow = {
+		  owns_core_province = 1756
+		  is_at_war = no
+		  primary_culture = romanian
+
+		  
+		}	
+	effect = {
+	    set_country_flag = relocated_capital_st_petersburg
+	    add_prestige = 55
+	    add_years_of_income = -1
+		add_cash = 333
+		
+		1951 = { 
+		        add_base_tax = 3
+			 	add_base_manpower = 2
+				add_base_production = 2		        
+				change_culture = romanian
+				change_religion = orthodox
+		}
+		1952 = {
+		        add_base_tax = 1
+			 	add_base_manpower = 1
+				add_base_production = 1
+				change_culture = romanian
+				change_religion = orthodox
+		}
+		2405 = {   
+                change_province_name = "Soroca"
+				rename_capital = "Soroca"			
+	            add_base_tax = 2
+			 	add_base_manpower = 2
+				add_base_production = 2
+				change_culture = romanian
+				change_religion = orthodox
+		}
+		
+	1756 = {
+		        add_base_tax = 1
+			 	add_base_manpower = 1
+				add_base_production = 1
+				change_culture = romanian
+				change_religion = orthodox
+		}
+		
+	268 = {
+		        add_base_tax = 3
+			 	add_base_manpower = 2
+				add_base_production = 2
+				change_culture = romanian
+				change_religion = orthodox
+		}
+	160 = {
+		        add_base_tax = 1
+			 	add_base_manpower = 1
+				add_base_production = 1
+				change_culture = romanian
+		}
+	161 = {
+		        add_base_tax = 3
+			 	add_base_manpower = 2
+				add_base_production = 2
+				change_culture = romanian
+		}
+	
+	2998 = {    
+	            change_province_name = "Bucuresti"
+				rename_capital = "Bucuresti"
+	            add_base_tax = 2
+			 	add_base_manpower = 2
+				add_base_production = 2
+				change_culture = romanian
+		}
+	158 = {
+		        add_base_tax = 1
+			 	add_base_manpower = 1
+				add_base_production = 1
+				change_culture = romanian
+				change_religion = orthodox
+		}
+	159 = {     
+	            change_province_name = "Dobrogea"
+				rename_capital = "Constanta"
+	            add_base_tax = 2
+			 	add_base_manpower = 3
+				add_base_production = 2
+				change_culture = romanian
+				change_religion = orthodox
+		}
+	156 = {
+		        add_base_tax = 2
+			 	add_base_manpower = 1
+				add_base_production = 1
+				change_culture = romanian
+		}
+	157 = {
+		        add_base_tax = 1
+			 	add_base_manpower = 1
+				add_base_production = 1 
+				change_culture = romanian
+				change_religion = orthodox
+		}
+	1954 = {    add_base_tax = 1
+			 	add_base_manpower = 1
+				add_base_production = 1  	           
+				change_culture = romanian
+				change_religion = orthodox
+		}
+	282 = {
+	            change_province_name = "Odesa"
+				rename_capital = "Odesa"
+	            add_base_tax = 1
+			 	add_base_manpower = 1
+				add_base_production = 1
+				change_culture = romanian
+				change_religion = orthodox
+		}
+	281 = {
+		        add_base_tax = 1
+			 	add_base_manpower = 1
+				add_base_production = 1
+				change_culture = romanian
+				change_religion = orthodox
+		}
+	261 = {
+		        add_base_tax = 2
+			 	add_base_manpower = 2
+				add_base_production = 2
+				change_culture = romanian
+                change_religion = orthodox				
+		}
+	150 = {
+		        add_base_tax = 1
+			 	add_base_manpower = 1
+				add_base_production = 1
+				change_culture = romanian
+                change_religion = orthodox				
+		}  
+		
+	1943 = {
+		        add_base_tax = 1
+			 	add_base_manpower = 1
+				add_base_production = 1
+				change_culture = romanian
+                change_religion = orthodox				
+		}		
+	}
+	
+	ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { years_of_income = 1.25 }
+			}
+		}
+}
+
+}
