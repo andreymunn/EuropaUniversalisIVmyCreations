@@ -1,0 +1,92 @@
+###countries_l_english.yml
+#############################
+CA1: "California"
+ CA1_ADJ: "Californian"
+ RO2: "Romania"
+ RO2_ADJ: "Romanian"
+ DA1: "Dacia"
+ DA1_ADJ: "Dacian"
+ IS1: "Israel"
+ IS1_ADJ: "Israelian"
+ CR2: "Crete"
+ CR2_ADJ: "Cretan"
+ CF1: "Caucasia"
+ CF1_ADJ: "Caucasian"
+ HOK: "Hong Kong"
+ HOK_ADJ: "Kantonese"
+ AN1: "Andland"
+ AN1_ADJ: "Andlandian"
+ AN2: "Great Wallachia"
+ AN2_ADJ: "Great Wallahian"
+ BU1: "Balkan Union"
+ BU1_ADJ: "Balkanian"
+
+
+################################
+#EU_l_english.yml
+##################################
+ nationalist_parlamentary_monarchy: "Nationalist Parlamentary Monarchy"
+ nationalist_parlamentary_monarchy_desc: "Nationalist Monarchy "
+ nationalist_parlamentary_monarchy_ruler: "King"
+ nationalist_parlamentary_monarchy_ruler_female: "Queen"
+
+ federal_united_republic: "Federal United Republic"
+ federal_united_republic_desc: "Federal United Republic "
+ federal_united_republic_ruler: "PRESIDENT"
+ federal_united_republic_ruler_female: "PRESIDENT"
+ 
+ military_dictartorship_republic: "Military Dictartorship Republic"
+ military_dictartorship_republic_desc: "Military Dictartorship Republic"
+ military_dictartorship_republic_ruler: "PRESIDENT"
+ military_dictartorship_republic_female: "PRESIDENT"
+ 
+ islamic_republic: "Islamic Republic"
+ islamic_republic_desc: "Islamic Republic"
+ islamic_republic_ruler: "PRESIDENT"
+ islamic_republic_female: "PRESIDENT"
+ 
+ democratic_constitutional_monarchy: "Democratic Constitutional Monarchy"
+ democratic_constitutional_monarchy_desc: "Demokratik Monarchy "
+ democratic_constitutional_monarchy_ruler: "King"
+ democratic_constitutional_monarchy_ruler_female: "Queen"
+ 
+ my_republic: "Federal Republic"
+ my_republic_desc: "My Federal Republic UNION "
+ my_republic_ruler: "Lord"
+ my_republic_ruler_female: "Lord"
+ andre_monarchy: "Parlamentary-Constitutional Monarchy"
+ andre_monarchy_desc: "My Kingdom Parlamentary-Constitutional "
+ andre_monarchy_ruler: "VOIVODE"
+ andre_monarchy_ruler_female: "VOIVODE"
+ andre2_monarchy: "Neoliberal Monarchy "
+ andre2_monarchy_desc: "Neoliberal Monarchy federal type "
+ andre2_monarchy_ruler: "VOIVODE"
+ andre2_monarchy_ruler_female: "VOIVODE"
+
+
+
+######################################
+##religion_l_english.yml
+#####################################
+neozamolxism: "NeoZamolxist"
+ neozamolxism_rebels_demand: "Convert $COUNTRYNAME$"
+ neozamolxism_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ neozamolxism_rebels_title: "Religious"
+ neozamolxism_rebels_name: "$RELIGION$ Zealots"
+ neozamolxism_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ neozamolxism_rebels_army: "$RELIGION$ Army"
+ 
+ neochristian: "Neochristian"
+ neochristian_rebels_demand: "Convert $COUNTRYNAME$"
+ neochristian_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ neochristian_rebels_title: "Religious"
+ neochristian_rebels_name: "$RELIGION$ Zealots"
+ neochristian_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ neochristian_rebels_army: "$RELIGION$ Army"
+
+
+#######cultures
+ californian: "Californian"
+ israelian: "israelian"
+ mexican: "Mexican"
+ brasilian: "Brasilian"

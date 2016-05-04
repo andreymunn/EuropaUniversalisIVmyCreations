@@ -1,0 +1,112 @@
+country_decisions = {
+
+nationalist_monarchy = {
+  major = yes
+   potential = {
+    
+    government = monarchy
+    
+	
+	#religious_unity = 0.7
+    }
+
+allow = {
+       stability = 1
+       adm_power = 600
+	   adm_tech = 14
+	   prestige = 10
+	   
+}
+
+effect = {
+  change_government = nationalist_parlamentary_monarchy
+  prestige = -10
+  add_stability = -1
+  adm_power = -300
+  add_inflation = -5
+}
+
+
+ai_will_do = {
+factor = 1
+
+
+}
+
+
+}
+
+islamic_republic = {
+
+   potential = {
+    NOT = { government = islamic_republic }
+    
+    OR = {
+	     government = iqta 
+		 religion_group = muslim
+	}
+    stability = 0
+    religious_unity = 0.9
+    }
+
+allow = {
+       prestige = -10
+	   full_idea_group = religious_ideas
+}
+
+effect = {
+  change_government = islamic_republic
+  add_stability = -1
+  add_prestige = 25
+}
+
+ai_will_do = {
+factor = 1
+
+
+}
+}
+
+military_dictatorship = {
+
+   potential = {
+    NOT = { government = military_dictartorship_republic}
+    
+	OR = {
+	government = republic
+	government = monarchy
+	}
+     stability = 1
+    }
+
+allow = {
+      
+	   full_idea_group = diplomatic_ideas
+	  
+	   prestige = -25
+	   legitimacy = 49
+	   
+	  
+	   
+}
+
+effect = {
+  change_government = military_dictartorship_republic  
+  add_stability = +2
+  add_adm_power = -100
+}
+
+ai_will_do = {
+factor = 1
+
+
+}
+
+
+}
+
+
+
+
+
+}

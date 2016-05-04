@@ -1,0 +1,212 @@
+country_event = {
+	id = and.122
+	
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+	
+	
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = californian
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = mexican
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = brasilian
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = spartan
+		
+	}
+
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = phoenician
+		
+	}
+
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = roman
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = dacian
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = macedonian
+		
+	}
+
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = dacoroman
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = iberian
+		
+	}
+
+
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = scythian
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = rusin
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = anglosaxonn
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = viking
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = caucasian
+		
+	}
+
+
+
+}

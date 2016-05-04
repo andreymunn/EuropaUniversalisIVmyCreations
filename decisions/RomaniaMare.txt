@@ -87,7 +87,9 @@ country_decisions = {
 						province_id = 156
 						province_id = 155
 						province_id = 162
-						
+						province_id = 2410
+                                                province_id = 284
+                                                province_id = 285
 						
 						}
 						NOT = { is_core = RO2 }
@@ -97,7 +99,7 @@ country_decisions = {
 			
 			random_owned_province = {
 				limit = { culture = romanian }
-				add_base_tax = 1
+				add_base_tax = 2
 			}
 			random_owned_province = {
 				limit = { culture = romanian }

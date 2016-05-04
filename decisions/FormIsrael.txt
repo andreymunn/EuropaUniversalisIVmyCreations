@@ -1,0 +1,114 @@
+country_decisions = {
+
+	Form_Israel_State = {
+		major = yes
+		potential = {
+			NOT = { exists = IS1 }
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+                             tag = FRA
+                             tag = ENG
+                             tag = GBR
+                             }
+			NOT = { government = republic }
+			
+				owns = 379
+				
+			
+			
+		}
+		allow = {
+			prestige = 100
+			is_at_war = no
+			owns_core_province = 379
+                        owns_core_province = 364
+			owns_core_province = 1854
+                 
+                   OR = {    
+                   AND = {
+                         OR = {
+                               MIL = 0
+                               MIL = 1
+                               MIL = 2
+                               MIL = 3
+                             }
+                         OR = {
+                                 ADM = 0 
+                                 ADM = 1
+                                 ADM = 2
+                                }
+                             }              
+                  AND = {
+                  stability = -3
+                  legitimacy < 50
+                  prestige < -25
+				     }
+                  }
+
+
+			
+		}
+		effect = {
+			add_prestige = 66
+			if = {
+				
+				IS1 = {
+					add_core = 1854
+					add_core = 379
+					add_core = 365
+                                        add_core = 364
+				}
+				release = IS1
+				IS1 = { change_primary_culture = israelian }
+			}
+			if = {
+				
+				change_tag = IS1
+				if = {
+					limit = { has_custom_ideas = no }
+					country_event = { id = ideagroups.1 } #Swap Ideas
+				}
+			}
+			
+			IS1 = {
+				set_capital = 1854
+				change_religion = jewish
+				change_government = administrative_republic
+				
+			}
+                       1854 = {
+	                        change_province_name = "Tel Aviv"
+				rename_capital = "Tel Aviv"
+	                        add_base_tax = 9
+			 	add_base_manpower = 8
+				add_base_production = 9
+				change_culture = israelian
+				change_religion = jewish
+		}
+                 379 = {
+		                add_base_tax = 5
+			 	add_base_manpower = 4
+				add_base_production = 5
+				change_culture = israelian
+				change_religion = jewish
+		}
+                364 = {
+		        add_base_tax = 3
+			 	add_base_manpower = 3
+				add_base_production = 3
+				change_culture = israelian
+				change_religion = jewish
+		}
+
+
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}

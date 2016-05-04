@@ -11,10 +11,9 @@ country_decisions = {
 			}
                         
 			OR = {
-                             religion = catholic
+                             
                              religion = othodox
-                             religion = protestant
-                             religion = reformed
+                           
                              religion = sunni
                              }
 			NOT = { government = republic }
@@ -33,7 +32,7 @@ country_decisions = {
                                MIL = 0
                                MIL = 1
                                MIL = 2
-                               MIL = 3
+                           
                              }
                          OR = {
                                  ADM = 0 
@@ -43,7 +42,7 @@ country_decisions = {
 			      }
 		}
 		effect = {
-			add_prestige = 25
+			add_prestige = 77
 			if = {
 				
 				CR2 = {

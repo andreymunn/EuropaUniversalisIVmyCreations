@@ -1,0 +1,91 @@
+graphical_culture = westerngfx
+
+color = { 170  45  223 }
+
+historical_idea_groups = {
+	
+	defensive_ideas
+	offensive_ideas
+	economic_ideas
+	trade_ideas
+	spy_ideas
+	quality_ideas
+	expansion_ideas
+        maritime_ideas
+}
+
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	swedish_gallop
+	swedish_gustavian
+	swedish_caroline
+	swedish_arme_blanche
+	prussian_frederickian
+	prussian_uhlan
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+leader_names = {
+	Dacian Sturza Muntean Walahus 
+        Andreev Tokugawa Takeda Toki
+        "de Távora"  "da Fonseca" "de Albuquerque"
+        "von Rottenburg" "von Hohenzollern" Linkendorf
+        "von Taubeneck" Vitebsky Galitsky Ghica Golescu
+         Fleming "von Fersen" Pedersen Povlsen "de Galard"
+         "de Richemont" "de Rochechouart" Rodney Davis Drake
+        Schmitt Krämer Christiansen Brockenhuus 
+}
+
+ship_names = {
+	Noroava Olota Ordava Pemka Poshayka
+	Tekay Tetyava  Tundya Unzhutka Yalgava
+}
+
+monarch_names = {
+        "André #0" = 20
+        "Andrey #0" = 20
+        "Auguste #0" = 10
+	"Auguste #0 Frédéric" =10
+        "Emmanuel #0" = 10
+        "Napoléon #0 Joseph" = 10
+         "Federico #0" = 10
+	"Filippo #0" = 10
+     	"Giacomo #0" = 0
+	"Giovanni #0" = 0
+        "Pietro #0" = 0
+	"Arthur #0" = 20
+	"Benjamin #0" = 0
+	"Christian #0" = 0
+	"Christopher #0" = 0
+	"Andrei #0" = 20
+	"Mihai #0" = 10
+	"Vasile #0" = 0
+	"Dan #0" = 10
+        "Francis #0" = 0
+         "Isaac #0" = 0
+	"Matthew #0" = 0
+	"Thomas #0" = 10
+	"Oliver #0" = 0
+        "Ernst #0" = 0
+	"Valdemar #4" = 1
+	"Henrik #0" = 0
+ 	"Maximilian #0" = 10
+
+	
+}
+
+army_names = {
+	"Army de $PROVINCE$" "National Army"
+}
+
+fleet_names = {
+	"Royal Flote" "Escadra de $PROVINCE$" 
+}
