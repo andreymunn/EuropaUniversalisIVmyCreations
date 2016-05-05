@@ -1,0 +1,98 @@
+country_decisions = {
+
+	MY_Culture_Dominations = {
+
+       potential = {
+	   
+	    tag = ROOT
+	   	      
+	   }
+	   
+	   allow = {
+	   		ADM = 6
+		    DIP = 6
+		    MIL = 6
+			
+	    prestige = 100
+		
+		adm_power = 999
+		dip_power = 999
+		mil_power = 999
+	   }
+	   
+	   effect = {
+	    adm_power = -500
+		dip_power = -500
+		mil_power = -300
+	 
+	   add_prestige = 25
+	   add_stability = +2
+	   
+	   capital_scope = {
+				
+				change_culture = ROOT
+			     }	
+           ROOT = { change_primary_culture = ROOT }
+	     
+           	random_owned_province = {
+				change_culture  = ROOT 
+				
+			}
+              	random_owned_province = {
+				change_culture  = ROOT 
+				
+			}
+	       random_owned_province = {
+				change_culture  = ROOT 
+				
+			}
+			random_owned_province = {
+				change_culture  = ROOT 
+				
+			}
+			random_owned_province = {
+				change_culture  = ROOT 
+				
+			}
+			random_owned_province = {
+				change_culture  = ROOT 
+				
+			}
+			random_owned_province = {
+				change_culture  = ROOT 
+				
+			}
+			random_owned_province = {
+				change_culture  = ROOT 
+				
+			}
+			random_owned_province = {
+				change_culture  = ROOT 
+				
+			}
+			random_owned_province = {
+				change_culture  = ROOT 
+				
+			}
+			random_owned_province = {
+				change_culture  = ROOT 
+				
+			}
+			random_owned_province = {
+				change_culture  = ROOT 
+				
+			}
+			random_owned_province = {
+				change_culture  = ROOT 
+				
+			}
+          
+		 }
+	   
+	   
+	   ai_will_do = {
+			factor = 1
+		}
+
+   }
+}

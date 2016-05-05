@@ -1,0 +1,92 @@
+country_decisions = {
+
+	Brasilian_Cultural_Nations = {
+
+       potential = {
+	   
+	    tag = BRZ
+	  
+	   
+	      
+	   }
+	   
+	   allow = {
+	   		is_subject = no
+			is_at_war = no
+	                tag = BRZ
+	   }
+	   
+	   effect = {
+	     
+		 
+	   add_prestige = 25
+	   add_stability = +2
+	   
+	   capital_scope = {
+				
+				change_culture = brasilian
+			     }	
+           BRZ = { change_primary_culture = brasilian }
+	     
+           	random_owned_province = {
+				change_culture  = brasilian 
+				
+			}
+              	random_owned_province = {
+				change_culture  = brasilian 
+				
+			}
+	       random_owned_province = {
+				change_culture  = brasilian 
+				
+			}
+			random_owned_province = {
+				change_culture  = brasilian 
+				
+			}
+			random_owned_province = {
+				change_culture  = brasilian 
+				
+			}
+			random_owned_province = {
+				change_culture  = brasilian 
+				
+			}
+			random_owned_province = {
+				change_culture  = brasilian 
+				
+			}
+			random_owned_province = {
+				change_culture  = brasilian 
+				
+			}
+			random_owned_province = {
+				change_culture  = brasilian 
+				
+			}
+			random_owned_province = {
+				change_culture  = brasilian 
+				
+			}
+			random_owned_province = {
+				change_culture  = brasilian 
+				
+			}
+			random_owned_province = {
+				change_culture  = brasilian 
+				
+			}
+			random_owned_province = {
+				change_culture  = brasilian 
+				
+			}
+          
+		 }
+	   
+	   
+	   ai_will_do = {
+			factor = 1
+		}
+
+   }
+}

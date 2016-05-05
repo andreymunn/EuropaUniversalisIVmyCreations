@@ -1,0 +1,94 @@
+country_decisions = {
+
+	Change_to_Mexican_Nation = {
+
+       potential = {
+	   OR = {
+	    tag = MEX
+	   colonial_mexico = {
+				owned_by = ROOT
+			}
+	   }
+	      
+	   }
+	   
+	   allow = {
+	   		is_subject = no
+			is_at_war = no
+	                tag = MEX
+	   }
+	   
+	   effect = {
+	     
+		 
+	   add_prestige = 25
+	   add_stability = +2
+	   
+	   capital_scope = {
+				
+				change_culture = mexican
+			     }	
+           MEX = { change_primary_culture = mexican }
+	     
+           	random_owned_province = {
+				change_culture  = mexican 
+				
+			}
+              	random_owned_province = {
+				change_culture  = mexican 
+				
+			}
+	       random_owned_province = {
+				change_culture  = mexican 
+				
+			}
+			random_owned_province = {
+				change_culture  = mexican 
+				
+			}
+			random_owned_province = {
+				change_culture  = mexican 
+				
+			}
+			random_owned_province = {
+				change_culture  = mexican 
+				
+			}
+			random_owned_province = {
+				change_culture  = mexican 
+				
+			}
+			random_owned_province = {
+				change_culture  = mexican 
+				
+			}
+			random_owned_province = {
+				change_culture  = mexican 
+				
+			}
+			random_owned_province = {
+				change_culture  = mexican 
+				
+			}
+			random_owned_province = {
+				change_culture  = mexican 
+				
+			}
+			random_owned_province = {
+				change_culture  = mexican 
+				
+			}
+			random_owned_province = {
+				change_culture  = mexican 
+				
+			}
+          
+		 }
+	   
+	   
+	   ai_will_do = {
+			factor = 1
+		}
+
+   }
+}
