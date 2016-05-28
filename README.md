@@ -12,6 +12,6 @@ add new religions ( neozamolxism neochristian ) + new rebels for this religions
 
 new flag(They are exactly like real ones) for new countries ,source images: wikipedia.com
 
-new ideas,for country or for group;New ideas for elections,Rulers,Dynasty,religion convert,provicial assimilation ...
-
+new ideas,for country or for group;
+New events for elections,best Rulers,Dynasty,religion convert,provicial assimilation ...
 new nations (israelian,dacian,iberian,latin,mexican,brasilian, californian, frankish,russin ...)
