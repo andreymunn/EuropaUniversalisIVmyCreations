@@ -1,0 +1,355 @@
+country_event = {
+	id = and.114
+	
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = PEU       
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+		option = {
+		
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = PEU       
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+	option = {
+		
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = WES	
+        change_primary_culture = hannoverian	
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+	option = {
+		
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = ARM	
+        change_primary_culture = armenian	
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+	option = {
+		
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = GEO	
+        change_primary_culture = georgian	
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}	
+
+	option = {
+		
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = GAZ	
+        change_primary_culture = dagestani	
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}	
+	option = {
+		
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = GAZ	
+        change_primary_culture = dagestani	
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+	option = {
+		
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = MAZ	
+        change_primary_culture = polish
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+	option = {
+		
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = MOD	
+        change_primary_culture = romagnan
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}	
+	
+		option = {
+		
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = FRI	
+        change_primary_culture = dutch	
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+option = {
+		
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = BRI	
+        change_primary_culture = breton	
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+	
+option = {
+		
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = RMN	
+        change_primary_culture = romanian	
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+option = {
+		
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = LEI	
+        change_primary_culture = irish	
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+option = {
+		
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = NAV	
+        change_primary_culture = basque	
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+option = {
+		
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = DNZ	
+        change_primary_culture = prussian	
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	
+	option = {
+		
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = NOL	
+        change_primary_culture = english
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+
+	option = {
+		
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = NRM	
+        change_primary_culture = normand
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+
+	option = {	
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = EFR	
+        change_primary_culture = hannoverian
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+	
+option = {	
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = ETR	
+        change_primary_culture = tuscan
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+option = {
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = MEI	
+        change_primary_culture = saxon
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+option = {	
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = GUA	
+        change_primary_culture = guarani
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+option = {	
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = EGY	
+        change_primary_culture = al_misr_arabic
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+option = {	
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = DAR	
+        change_primary_culture = nubian
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+
+option = {	
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = APA	
+        change_primary_culture = apache
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+		
+option = {
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = SIB	
+        change_primary_culture = siberian
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+		
+option = {
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = SYR	
+        change_primary_culture = al_suryah_arabic
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+	
+option = {
+		
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = MYS	
+        change_primary_culture = kannada	
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+	
+option = {	
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = CEY	
+        change_primary_culture = sinhala
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+
+option = {	
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = BNG	
+        change_primary_culture = bengali
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+option = {	
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = BSH	
+        change_primary_culture = bashkir
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+option = {	
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = KZH	
+        change_primary_culture = khazak
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}	
+	option = {	
+		ai_chance = {  
+			factor = 20
+		} 
+		change_tag = AKK	
+        change_primary_culture = turkish
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
+	}
+}

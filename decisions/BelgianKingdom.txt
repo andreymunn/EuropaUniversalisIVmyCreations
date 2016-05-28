@@ -1,0 +1,84 @@
+country_decisions = {
+
+	Form_Belgian_Kingdom = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			
+			NOT = { exists = BE1 }
+			OR = {
+			primary_culture = flemish
+			primary_culture = wallonian
+			}
+			
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		allow = {
+			is_subject = no
+			is_nomad = no
+			is_at_war = no
+			
+			owns_core_province = 92
+			owns_core_province = 90
+			owns_core_province = 1744
+			owns_core_province = 91
+			owns_core_province = 1865
+			owns_core_province = 1866
+                        owns_core_province = 1866
+                        owns_core_province = 1742
+                        OR = {
+                          owns_core_province = 94
+                          owns_core_province = 2974
+                          }
+		}
+		effect = {
+			change_tag = BE1
+			
+			if = {
+				limit = {
+					NOT = {
+						government_rank = 2
+					}
+				}
+				set_government_rank = 2
+			}
+			random_owned_province = {
+				add_base_tax = 1
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			BE1 = {
+				set_capital = 92
+			}
+			92 = { 
+		        add_base_tax = 5
+			 	add_base_manpower = 4
+				add_base_production = 4	        
+				change_culture = ROOT
+				
+		         }
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

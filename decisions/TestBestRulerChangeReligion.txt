@@ -1,6 +1,6 @@
 country_decisions = {
 
-	MY_Culture_Dominations = {
+	MY_Religion_Dominations = {
 
        potential = {
 	   
@@ -39,60 +39,60 @@ country_decisions = {
 	   
 	   capital_scope = {
 				
-				change_culture = ROOT
+				change_religion = ROOT
 			     }	
-           ROOT = { change_primary_culture = ROOT }
+           
 	     
            	random_owned_province = {
-				change_culture  = ROOT 
+				change_religion = ROOT 
 				
 			}
               	random_owned_province = {
-				change_culture  = ROOT 
+				change_religion = ROOT 
 				
 			}
 	       random_owned_province = {
-				change_culture  = ROOT 
+				change_religion = ROOT 
 				
 			}
 			random_owned_province = {
-				change_culture  = ROOT 
+				change_religion = ROOT 
 				
 			}
 			random_owned_province = {
-				change_culture  = ROOT 
+				change_religion = ROOT 
 				
 			}
 			random_owned_province = {
-				change_culture  = ROOT 
+				change_religion = ROOT 
 				
 			}
 			random_owned_province = {
-				change_culture  = ROOT 
+				change_religion = ROOT 
 				
 			}
 			random_owned_province = {
-				change_culture  = ROOT 
+				change_religion = ROOT 
 				
 			}
 			random_owned_province = {
-				change_culture  = ROOT 
+				change_religion = ROOT 
 				
 			}
 			random_owned_province = {
-				change_culture  = ROOT 
+				change_religion = ROOT 
 				
 			}
 			random_owned_province = {
-				change_culture  = ROOT 
+				change_religion = ROOT 
 				
 			}
 			random_owned_province = {
-				change_culture  = ROOT 
+				change_religion = ROOT 
 				
 			}
 			random_owned_province = {
-				change_culture  = ROOT 
+				change_religion = ROOT 
 				
 			}
           

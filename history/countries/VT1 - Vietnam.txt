@@ -1,0 +1,14 @@
+government = despotic_monarchy
+primary_culture = vietnamese
+religion = mahayana
+technology_group = western
+capital = 613	# Hanoi
+
+historical_friend = RUS
+historical_friend = FRA
+historical_friend = PRU
+historical_friend = USA
+historical_friend = PER
+historical_friend = BRZ
+historical_friend = NED
+historical_friend = JAP

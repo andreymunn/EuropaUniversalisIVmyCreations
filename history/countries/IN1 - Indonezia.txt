@@ -1,0 +1,7 @@
+government = despotic_monarchy
+primary_culture = javanese
+religion = sunni
+technology_group = western
+capital = 630	# Jakarta
+
+

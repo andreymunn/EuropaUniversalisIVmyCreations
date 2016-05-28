@@ -1,0 +1,7 @@
+government = constitutional_republic
+
+primary_culture = israelian
+religion = jewish
+technology_group = western
+#capital = 379	# Jerusalem
+capital = 1854

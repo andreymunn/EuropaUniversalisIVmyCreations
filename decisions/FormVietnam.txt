@@ -1,0 +1,76 @@
+country_decisions = {
+
+	Form_Vietnam = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = VT1 }
+			OR ={			
+			   primary_culture = vietnamese
+			   primary_culture = polynesian
+			   primary_culture = bornean
+			   primary_culture = mon
+			   primary_culture = khmer			  
+			}
+			
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			OR = {
+				ai = no
+				num_of_cities = 12
+			}
+		}
+		allow = {
+			is_subject = no
+			is_nomad = no
+			is_at_war = no
+			
+			owns = 613
+                        
+			AND = { 
+			  
+				vietnam_area = {
+							type = all
+							owned_by = ROOT
+						}
+					}
+				
+		}
+		effect = {
+			change_tag = VT1
+			
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			every_province ={
+				limit = {
+				   region = indo_china_region
+					
+				}
+				add_permanent_claim = VT1
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

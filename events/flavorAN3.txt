@@ -9,24 +9,11 @@ country_event = {
 		
 		ai_chance = {  
 			factor = 20
-		}
-		change_tag = LUX
-		
-		change_technology_group = western
-                
-                change_graphical_culture = westerngfx
-                 
-		every_owned_province = {
-			
-			
-			add_core = LUX
-			owns = 368
-			add_core = 368
-		}
-				
-		
-		LUX = { change_religion = catholic }
-
+		} 
+		change_tag = LUX		
+		change_technology_group = western                
+                change_graphical_culture = westerngfx               
+						
 	}
 	
   option = {
@@ -59,13 +46,8 @@ country_event = {
 				NOT = { owned_by = ROOT }
 				  }
 				add_permanent_claim = POL
-			          }
-                         	
+			          }                         
 	       
-			
-		
-		POL = { change_religion = orthodox }
-
 	}
 	
 	option = {
@@ -73,69 +55,77 @@ country_event = {
 		ai_chance = { 
 			factor = 20
 		}
-		change_tag = BUR
-                change_primary_culture = burgundian
+		change_tag = BUR               
+                change_technology_group = western
                 
-		change_technology_group = western
-                swap_free_idea_group = yes
-		every_owned_province = {
-			
-			
-			add_core = BUR
-			owns = 321
-			add_core = 321
-		}
-				
-		
-		BUR = { change_religion = ROOT }
-
 	}
-  
-
+	option = {
+		
+		ai_chance = { 
+			factor = 20
+		}
+		change_tag = ARD               
+                change_technology_group = western
+                
+	}  
+	option = {
+		
+		ai_chance = { 
+			factor = 20
+		}
+		change_tag = AFG               
+                change_technology_group = western
+                
+	}
+	option = {
+		
+		ai_chance = { 
+			factor = 20
+		}
+		change_tag = TOU               
+                change_technology_group = western
+                
+	}
 	option = {
 		
 		ai_chance = { 
 			factor = 80
 		}
-		change_tag = AN1
-		
+		change_tag = AN1		
                 change_technology_group = western
-		swap_free_idea_group = yes
-		
-		every_owned_province = {
-			limit = {
-				
-			}
-			add_core = AN1
-			owns = 321
-			add_core = 321
-		}
-						
-
+		swap_free_idea_group = yes			
 		AN1 = { change_religion = ROOT }
 	
 	}
+	option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = AQU		
+                change_technology_group = western
+		swap_free_idea_group = yes			
+		AQU = { change_religion = ROOT }
+	
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 20
+		}
+		change_tag = FRN             
+                change_technology_group = western
+                
+	}
 option = {
 		
 		ai_chance = { 
 			factor = 80
 		}
-		change_tag = AN3
+		change_tag = ADU		
+                change_technology_group = western				
 		
-                change_technology_group = western
-		swap_free_idea_group = yes
-		
-		every_owned_province = {
-			limit = {
-				
-			}
-			add_core = AN3
-			owns = 321
-			add_core = 321
-		}
-						
-
-		AN3 = { change_religion = ROOT }
+		ADU = { change_religion = ROOT }
 	
 	}
 option = {
@@ -143,21 +133,8 @@ option = {
 		ai_chance = { 
 			factor = 80
 		}
-		change_tag = PRG
-		
-                change_technology_group = western
-		
-		
-		every_owned_province = {
-			limit = {
-				
-			}
-			add_core = PRG
-			owns = 321
-			add_core = 321
-		}
-						
-
+		change_tag = PRG		
+                change_technology_group = western				
 		PRG = { change_religion = ROOT }
 	
 	}
@@ -166,20 +143,236 @@ option = {
 		ai_chance = { 
 			factor = 80
 		}
-		change_tag = CAN
+		change_tag = VNZ		
+                change_technology_group = western				
+		VNZ = { change_religion = ROOT }
+	
+	}
+option = {
 		
-                change_technology_group = western
-		
-		
-		every_owned_province = {
-			limit = {
-				
-			}
-			add_core = CAN
-			owns = 321
-			add_core = 321
+		ai_chance = { 
+			factor = 20
 		}
-						
+		change_tag = GEN              
+                change_technology_group = western
+                
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 20
+		}
+		change_tag = BRA              
+                change_technology_group = western
+                
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = VOL		
+                change_technology_group = western				
+		VOL = { change_religion = ROOT }
+	
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = ACH		
+                change_technology_group = western				
+		ACH = { change_religion = ROOT }
+	
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = TEU
+		change_technology_group = western
+		
+	}
+
+option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = PIS		
+                change_technology_group = western				
+		PIS = { change_religion = ROOT }
+	
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = MLO		
+                change_technology_group = western				
+		MLO = { change_religion = ROOT }
+	
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = LAN		
+                change_technology_group = western				
+		LAN = { change_religion = ROOT }
+	
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = MEN		
+                change_technology_group = western				
+		MEN = { change_religion = ROOT }
+	
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = BOU		
+                change_technology_group = western				
+		BOU = { change_religion = ROOT }
+	
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = GAL		
+                change_technology_group = western				
+		GAL = { change_religion = ROOT }
+	
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = GAZ		
+                change_technology_group = western				
+		GAL = { change_religion = ROOT }
+	
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = MON		
+                change_technology_group = western				
+		MON = { change_religion = ROOT }
+	
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = MUN		
+                change_technology_group = western				
+		MUN = { change_religion = ROOT }
+	
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = AVI		
+                change_technology_group = western				
+		AVI = { change_religion = ROOT }
+	
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = EGY		
+                change_technology_group = western				
+		EGY = { change_religion = ROOT }
+	
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = MLC		
+                change_technology_group = western				
+		MLC = { change_religion = ROOT }
+	
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = CYP		
+                change_technology_group = western				
+		CYP = { change_religion = ROOT }
+	
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = BYZ		
+                change_technology_group = western				
+		BYZ = { change_religion = ROOT }
+	
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = GOL		
+                change_technology_group = western				
+		GOL = { change_religion = ROOT }
+	
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = WLS		
+                change_technology_group = western				
+		WLS = { change_religion = ROOT }
+	
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = VER		
+                change_technology_group = western				
+		VER = { change_religion = ROOT }
+	
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 80
+		}
+		change_tag = CAN		
+                change_technology_group = western						
 
 		CAN = { change_religion = ROOT }
 	
@@ -190,83 +383,51 @@ option = {
 		ai_chance = { 
 			factor = 80
 		}
-		change_tag = AN2
-		
+		change_tag = ORL		
                 change_technology_group = western
-		swap_free_idea_group = yes
 		
-		every_owned_province = {
-			limit = {
-				
-			}
-			add_core = AN2
-			owns = 321
-			add_core = 321
-		}
-						
-
-		AN2 = { change_religion = ROOT }
-	
 	}
 
+
+  option = {
+		
+		ai_chance = { 
+			factor = 20
+		}
+		change_tag = NOV		
+                change_technology_group = western
+		
+	}
+	
+	
 option = {
 		
 		ai_chance = { 
-			factor = 80
-		}
-		change_tag = TEU
-		change_primary_culture = armenian
-                change_technology_group = western
-		
-		
-		every_owned_province = {
-			limit = {
-				
-			}
-			add_core = TEU
-			owns = 321
-			add_core = 321
-		}
-						
-
-		TEU = { change_religion = ROOT }
-	
-	}
-
-  option = {
-		
-		ai_chance = { 
 			factor = 20
 		}
-		change_tag = NOV
+		change_tag = MOS
 		change_primary_culture = russian
                 change_technology_group = western
 		swap_free_idea_group = yes
-		every_owned_province = {
-			
-			
-			add_core = NOV
-			owns = 368
-			add_core = 368
-		}
-		add_core = 321		
 		
-		NOV = { change_religion = orthodox }
-
 	}
-	
-	
-
+option = {
+		
+		ai_chance = { 
+			factor = 20
+		}
+		change_tag = CRI		
+                change_technology_group = western
+				
+	}
   option = {
 		
 		ai_chance = { 
 			factor = 20
 		}
-		change_tag = KAZ
-		change_primary_culture = russian
+		change_tag = KAZ		
                 change_technology_group = western
-		#change_government = united_republic
-		
+				
 		every_owned_province = {
 			
 			
@@ -304,9 +465,7 @@ option = {
 			
 			
 		}
-		
-		KAZ = { change_religion = orthodox }
-
+			
 	}
 
   option = {
@@ -316,7 +475,7 @@ option = {
 		}
 		change_tag = MOL
 		change_primary_culture = romanian
-               change_technology_group = western
+                change_technology_group = western
 		
 		
 		every_owned_province = {
@@ -337,8 +496,7 @@ option = {
 			          }
 			
 		}
-		
-		MOL = { change_religion = orthodox }
+			
 
 	}
 
@@ -350,8 +508,7 @@ option = {
 		change_tag = WAL
 		change_primary_culture = romanian
                 change_technology_group = western
-		
-		
+				
 		every_owned_province = {
 			
 			
@@ -364,33 +521,29 @@ option = {
 			
 		}
 		
-		WAL = { change_religion = orthodox }
-
 	}
 
-option = {
+  option = {
 		
 		ai_chance = { 
 			factor = 20
 		}
-		change_tag = MOS
-		change_primary_culture = russian
-                change_technology_group = western
-		swap_free_idea_group = yes
+		change_tag = TRA		
+                change_technology_group = western				
 		every_owned_province = {
 			
 			
-			add_core = MOS
-			owns = 368
-			add_core = 368
+			carpathia_region = {
+                         limit = {
+				NOT = { owned_by = ROOT }
+				  }
+				add_permanent_claim = TRA
+			          }
+			
 		}
-		add_core = 321		
 		
-		MOS = { change_religion = orthodox }
-
 	}
-
-	option = {
+option = {
 		
 		ai_chance = { 
 			factor = 0
@@ -920,6 +1073,45 @@ option = {
 		add_mil_power = +670
                 change_technology_group = western
                 change_primary_culture = viking
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = russin
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = muntenian
+		
+	}
+option = {
+		
+		ai_chance = { 
+			factor = 0
+		}
+		add_stability = +3
+		add_adm_power = +650
+		add_dip_power = +750
+		add_mil_power = +670
+                change_technology_group = western
+                change_primary_culture = hyberborean
 		
 	}
 option = {

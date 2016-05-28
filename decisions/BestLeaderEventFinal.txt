@@ -1,0 +1,47 @@
+country_decisions = {
+
+Best_LeaderBuildCapital = {
+
+   potential = {
+       
+	   tag = ROOT
+           stability = 3
+         }
+		 
+		 
+   allow = {
+   
+                ADM = 6
+		DIP = 6
+		MIL = 6
+        
+		prestige = 100
+		
+		adm_power = 999
+		dip_power = 999
+		mil_power = 999
+		
+   }
+
+  effect = {
+  
+   add_presige = 10
+   cash = -100
+   add_inflation = -5
+            
+				25 = {
+				 add_core = GOT
+                                 
+				      }
+			
+	capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			     }		
+  }
+	factor = 1
+		}		
+		
+   
+}

@@ -1,0 +1,99 @@
+country_decisions = {
+
+	Form_Indonezia = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = IN1 }
+			OR ={			
+			   primary_culture = javanese
+			   primary_culture = sumatran
+			   primary_culture = bornean
+			   primary_culture = madagascan
+			   primary_culture = sulawesi			  
+			}
+			
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			OR = {
+				ai = no
+				num_of_cities = 12
+			}
+		}
+		allow = {
+			is_subject = no
+			is_nomad = no
+			is_at_war = no
+			
+			owns = 630
+                        owns = 636
+                        owns = 637
+			owns = 2703
+                        owns = 2704
+                        owns = 2705
+
+
+
+			AND = { 
+			   east_java_area = {
+		        type = all
+				   owned_by = ROOT
+				}
+				kalimantan_area = {
+					type = all
+					owned_by = ROOT
+					}
+				
+				kutai_area = {
+							type = all
+							owned_by = ROOT
+						}
+				central_java_area = {
+							type = all
+							owned_by = ROOT
+						}
+				west_java_area = {
+							type = all
+							owned_by = ROOT
+						}
+					}
+				
+		}
+		effect = {
+			change_tag = IN1
+			
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			every_province ={
+				limit = {
+				   region = indonesia_region
+					
+				}
+				add_permanent_claim = IN1
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

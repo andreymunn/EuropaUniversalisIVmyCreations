@@ -1,0 +1,288 @@
+# imbunatateste datele provinciei
+province_event = {
+	id = and.1
+
+	trigger = {
+		is_capital = no
+		
+		NOT = { has_province_modifier = religious_zeal_at_conv }
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 5 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 6 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 7 }
+		}
+		modifier = {
+			factor = 2.0			
+		}
+	}
+
+	is_mtth_scaled_to_size = 1
+
+	option = {
+		            	add_base_tax = 6
+				add_base_production = 5
+				add_base_manpower = 5
+	}
+}
+# Tolerant Policy
+province_event = {
+	id = and.7
+	title = "religious_events.EVTNAME1"
+	desc = "religious_events.EVTDESC1"
+	picture = RELIGION_eventPicture
+
+	trigger = {
+		is_capital = no
+		religion = catholic
+		owner = {
+			NOT = { government = papal_government }
+			religion = catholic 
+			zamolxism1 = 2
+		} 
+		any_neighbor_province = {
+			religion = orthodox
+		}
+		NOT = { has_province_modifier = religious_zeal_at_conv }
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 5 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 6 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 7 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { government = theocratic_government }
+		}
+	}
+
+	is_mtth_scaled_to_size = 1
+
+	option = {
+		name = "religious_events.EVTOPTA1"
+		change_religion = orthodox
+	}
+}
+
+# Tolerant Policy
+province_event = {
+	id = and.8
+	title = "religious_events.EVTNAME1"
+	desc = "religious_events.EVTDESC1"
+	picture = RELIGION_eventPicture
+
+	trigger = {
+		is_capital = no
+		religion = catholic
+		owner = {
+			NOT = { government = papal_government }
+			religion = catholic 
+			zamolxism1 = 2
+		} 
+		any_neighbor_province = {
+			religion = reformed
+		}
+		NOT = { has_province_modifier = religious_zeal_at_conv }
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 5 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 6 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 7 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { government = theocratic_government }
+		}
+	}
+
+	is_mtth_scaled_to_size = 1
+
+	option = {
+		name = "religious_events.EVTOPTA1"
+		change_religion = reformed
+	}
+}
+
+# Tolerant Policy
+province_event = {
+	id = and.9
+	title = "religious_events.EVTNAME1"
+	desc = "religious_events.EVTDESC1"
+	picture = RELIGION_eventPicture
+
+	trigger = {
+		is_capital = no
+		religion = catholic
+		owner = {
+			NOT = { government = papal_government }
+			religion = catholic 
+			zamolxism1 = 2
+		} 
+		any_neighbor_province = {
+			religion = neochristian
+		}
+		NOT = { has_province_modifier = religious_zeal_at_conv }
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 5 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 6 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 7 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { government = theocratic_government }
+		}
+	}
+
+	is_mtth_scaled_to_size = 1
+
+	option = {
+		name = "religious_events.EVTOPTA1"
+		change_religion = neochristian
+	}
+}
+
+# Tolerant Policy
+province_event = {
+	id = and.10
+	
+	trigger = {
+		NOT = { has_province_modifier = religious_zeal_at_conv }
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 5 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 6 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { innovativeness_ideas = 7 }
+		}
+		modifier = {
+			factor = 2.0			
+		}
+	}
+
+	is_mtth_scaled_to_size = 1
+
+	option = {
+		name = "religious_events.EVTOPTA1"
+		change_religion = confucianism
+	}
+}
+
+country_event = {
+	id = and.13
+	title = "EVTNAME9469"
+	desc = "EVTDESC9469"
+	picture = NEW_HEIR_eventPicture
+	
+	trigger = {
+		
+		is_lesser_in_union = no
+		has_heir = no
+		has_regency = no
+	}
+	
+	mean_time_to_happen = {
+		months = 2000
+	}
+	
+	option = {
+		name = "EVTOPTA9469"
+		define_heir = {
+			dynasty = ROOT
+			name = "Alexandru"
+			claim = 100
+			mil = 6
+			dip = 6
+		}
+	}
+	option = {
+		name = "EVTOPTB9469"
+		define_heir = {
+			dynasty = ROOT
+			name = "Andrei"
+			claim = 100
+			adm = 6
+            mil = 6
+			dip = 6
+		}
+	}     
+      option = {
+		name = "EVTOPTC9469"
+		define_heir = {
+			dynasty = ROOT
+			name = "Mihai"
+			claim = 100
+			dip = 6
+			adm = 6
+		}
+	}		
+}

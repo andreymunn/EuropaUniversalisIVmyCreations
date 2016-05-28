@@ -1,6 +1,6 @@
 ###countries_l_english.yml
 #############################
-CA1: "California"
+ CA1: "California"
  CA1_ADJ: "Californian"
  RO2: "Romania"
  RO2_ADJ: "Romanian"
@@ -20,7 +20,21 @@ CA1: "California"
  AN2_ADJ: "Great Wallahian"
  BU1: "Balkan Union"
  BU1_ADJ: "Balkanian"
+ BE1: "Belgium"
 
+ BE1_ADJ: "Belgian"
+ 
+ GE1: "Germany"
+ 
+ GE1_ADJ: "German"
+ EU1: "European Union"
+ EU1_ADJ: "European"
+ IT1: "Italy"
+ IT1_ADJ: "Italian"
+ IN1: "Indonezia"
+ IN1_ADJ: "Indonezian"
+ VT1: "Vietnam"
+ VT1_ADJ: "Vietnamese" 
 
 ################################
 #EU_l_english.yml
@@ -87,6 +101,24 @@ neozamolxism: "NeoZamolxist"
 
 #######cultures
  californian: "Californian"
- israelian: "israelian"
+
+ israelian: "Israelian"
+
  mexican: "Mexican"
+ 
  brasilian: "Brasilian"
+ 
+ viking: "Viking"
+
+ dacian: "Dacian"
+
+ frankish: "Frankish"
+ 
+floredian: "Floredian"
+
+ canadian: "Canadian"
+ frankish: "Frankish" 
+ floredian: "Floredian" 
+ muntenian: "Muntenian"
+ hyberborean: "Hyberborean"
+ russin: "Russin"
